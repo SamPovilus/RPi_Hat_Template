@@ -1,0 +1,135 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:OpenROV
+LIBS:sam_adc
+LIBS:RPi_Hat-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 14 14
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LT1634CCZ U1101
+U 1 1 58F87078
+P 4200 3550
+AR Path="/5515D395/58F86FB8/58F87078" Ref="U1101"  Part="1" 
+AR Path="/5515D395/58F8DA6C/58F87078" Ref="U1201"  Part="1" 
+AR Path="/5515D395/58F8DE51/58F87078" Ref="U1301"  Part="1" 
+AR Path="/5515D395/58F8DE54/58F87078" Ref="U1401"  Part="1" 
+F 0 "U1101" H 4600 3650 60  0000 R TNN
+F 1 "LT1634CCZ" H 4400 4200 60  0000 C TNN
+F 2 "Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm" H 4350 3450 60  0001 C CNN
+F 3 "" H 4350 3450 60  0001 C CNN
+	1    4200 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR041
+U 1 1 58F870EB
+P 3950 3550
+AR Path="/5515D395/58F86FB8/58F870EB" Ref="#PWR041"  Part="1" 
+AR Path="/5515D395/58F8DA6C/58F870EB" Ref="#PWR043"  Part="1" 
+AR Path="/5515D395/58F8DE51/58F870EB" Ref="#PWR045"  Part="1" 
+AR Path="/5515D395/58F8DE54/58F870EB" Ref="#PWR047"  Part="1" 
+F 0 "#PWR041" H 3950 3300 50  0001 C CNN
+F 1 "GND" H 3950 3400 50  0000 C CNN
+F 2 "" H 3950 3550 50  0000 C CNN
+F 3 "" H 3950 3550 50  0000 C CNN
+	1    3950 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3350 3950 3550
+$Comp
+L R R1101
+U 1 1 58F8710B
+P 5200 3100
+AR Path="/5515D395/58F86FB8/58F8710B" Ref="R1101"  Part="1" 
+AR Path="/5515D395/58F8DA6C/58F8710B" Ref="R1201"  Part="1" 
+AR Path="/5515D395/58F8DE51/58F8710B" Ref="R1301"  Part="1" 
+AR Path="/5515D395/58F8DE54/58F8710B" Ref="R1401"  Part="1" 
+F 0 "R1101" V 5280 3100 50  0000 C CNN
+F 1 "R" V 5200 3100 50  0000 C CNN
+F 2 "Resistors_SMD:R_1812_HandSoldering" V 5130 3100 50  0000 C CNN
+F 3 "" H 5200 3100 50  0000 C CNN
+	1    5200 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3250 6150 3250
+Connection ~ 5200 3250
+$Comp
+L +5V #PWR042
+U 1 1 58F87172
+P 5200 2800
+AR Path="/5515D395/58F86FB8/58F87172" Ref="#PWR042"  Part="1" 
+AR Path="/5515D395/58F8DA6C/58F87172" Ref="#PWR044"  Part="1" 
+AR Path="/5515D395/58F8DE51/58F87172" Ref="#PWR046"  Part="1" 
+AR Path="/5515D395/58F8DE54/58F87172" Ref="#PWR048"  Part="1" 
+F 0 "#PWR042" H 5200 2650 50  0001 C CNN
+F 1 "+5V" H 5200 2940 50  0000 C CNN
+F 2 "" H 5200 2800 50  0000 C CNN
+F 3 "" H 5200 2800 50  0000 C CNN
+	1    5200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2950 5200 2800
+Text HLabel 6150 3250 2    60   Input ~ 0
+VRef
+$Comp
+L TEST_1P W1101
+U 1 1 58F8A3A2
+P 5650 3150
+AR Path="/5515D395/58F86FB8/58F8A3A2" Ref="W1101"  Part="1" 
+AR Path="/5515D395/58F8DA6C/58F8A3A2" Ref="W1201"  Part="1" 
+AR Path="/5515D395/58F8DE51/58F8A3A2" Ref="W1301"  Part="1" 
+AR Path="/5515D395/58F8DE54/58F8A3A2" Ref="W1401"  Part="1" 
+F 0 "W1101" H 5650 3420 50  0000 C CNN
+F 1 "TEST_1P" H 5650 3350 50  0000 C CNN
+F 2 "Measurement_Points:Test_Point_Keystone_5015_Micro-Minature" H 5850 3150 50  0000 C CNN
+F 3 "" H 5850 3150 50  0000 C CNN
+	1    5650 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3150 5650 3250
+Connection ~ 5650 3250
+$EndSCHEMATC
