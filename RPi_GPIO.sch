@@ -573,4 +573,6 @@ Connection ~ 4100 3400
 Wire Wire Line
 	4750 5200 4700 5200
 Connection ~ 4700 5200
+Text Notes 6500 1550 2    60   ~ 0
+TODO: Figure out how to use RefComp on the ltc2309\n
 $EndSCHEMATC
