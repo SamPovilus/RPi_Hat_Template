@@ -2,8 +2,8 @@
 
   (general
     (links 168)
-    (no_connects 99)
-    (area -0.050001 -0.050001 65.050001 56.550001)
+    (no_connects 130)
+    (area -10.421428 -10.7 133.92857 76.175002)
     (thickness 1.6)
     (drawings 32)
     (tracks 36)
@@ -939,7 +939,7 @@
   )
 
   (module Housings_SSOP:TSSOP-20_4.4x6.5mm_Pitch0.65mm (layer F.Cu) (tedit 54130A77) (tstamp 58F6318F)
-    (at 36.83 38.1)
+    (at 24.13 36.83)
     (descr "20-Lead Plastic Thin Shrink Small Outline (ST)-4.4 mm Body [TSSOP] (see Microchip Packaging Specification 00000049BS.pdf)")
     (tags "SSOP 0.65")
     (path /5515D395/58F42999/58F429E0)
@@ -1121,7 +1121,7 @@
   )
 
   (module Measurement_Points:Test_Point_Keystone_5015_Micro-Minature (layer F.Cu) (tedit 56E5E7EB) (tstamp 58F6A71D)
-    (at 33.02 31.75)
+    (at 15.24 31.75)
     (descr "SMT Test Point- Micro Miniature 5015, http://www.keyelco.com/product-pdf.cfm?p=1353")
     (tags "Test Point")
     (path /5515D395/58F42999/58F430DE)
@@ -1149,7 +1149,7 @@
   )
 
   (module Measurement_Points:Test_Point_Keystone_5015_Micro-Minature (layer F.Cu) (tedit 56E5E7EB) (tstamp 58F6A72E)
-    (at 39.37 31.75)
+    (at 21.59 31.75)
     (descr "SMT Test Point- Micro Miniature 5015, http://www.keyelco.com/product-pdf.cfm?p=1353")
     (tags "Test Point")
     (path /5515D395/58F42999/58F42EBC)
@@ -1361,7 +1361,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x03_Pitch2.00mm (layer F.Cu) (tedit 56FA75DA) (tstamp 58F60D2E)
-    (at 32.5 66.550001)
+    (at 62.23 31.75)
     (descr "Through hole pin header, 1x03, 2.00mm pitch, single row")
     (tags "pin header single row")
     (path /5515D395/58F5B3F8/58F42AEA)
@@ -1395,7 +1395,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x03_Pitch2.00mm (layer F.Cu) (tedit 56FA75DA) (tstamp 58F60D3F)
-    (at 32.5 66.550001)
+    (at 58.42 31.75)
     (descr "Through hole pin header, 1x03, 2.00mm pitch, single row")
     (tags "pin header single row")
     (path /5515D395/58F5B3F8/58F42CAF)
@@ -1429,7 +1429,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_2x04 (layer F.Cu) (tedit 0) (tstamp 58F60D57)
-    (at 32.5 66.550001)
+    (at 59.69 39.37)
     (descr "Through hole pin header")
     (tags "pin header")
     (path /5515D395/58F92A36)
@@ -1475,7 +1475,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_2x04 (layer F.Cu) (tedit 0) (tstamp 58F60D6F)
-    (at 32.5 66.550001)
+    (at 52.07 39.37)
     (descr "Through hole pin header")
     (tags "pin header")
     (path /5515D395/58F8AAB9)
@@ -1521,7 +1521,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_2x04 (layer F.Cu) (tedit 0) (tstamp 58F60D87)
-    (at 32.5 66.550001)
+    (at 44.45 39.37)
     (descr "Through hole pin header")
     (tags "pin header")
     (path /5515D395/58F92D82)
@@ -1567,7 +1567,7 @@
   )
 
   (module Resistors_SMD:R_1812_HandSoldering (layer F.Cu) (tedit 58307D36) (tstamp 58F60D97)
-    (at 32.5 66.550001)
+    (at 48.26 52.07)
     (descr "Resistor SMD 1812, hand soldering, Panasonic (see ERJ12)")
     (tags "resistor 1812")
     (path /5515D395/58F86FB8/58F8710B)
@@ -1595,7 +1595,7 @@
   )
 
   (module Resistors_SMD:R_1812_HandSoldering (layer F.Cu) (tedit 58307D36) (tstamp 58F60DA7)
-    (at 32.5 66.550001)
+    (at 35.56 52.07)
     (descr "Resistor SMD 1812, hand soldering, Panasonic (see ERJ12)")
     (tags "resistor 1812")
     (path /5515D395/58F8DA6C/58F8710B)
@@ -1679,7 +1679,7 @@
   )
 
   (module Housings_SSOP:TSSOP-20_4.4x6.5mm_Pitch0.65mm (layer F.Cu) (tedit 54130A77) (tstamp 58F60DEA)
-    (at 32.5 66.550001)
+    (at 15.24 46.99)
     (descr "20-Lead Plastic Thin Shrink Small Outline (ST)-4.4 mm Body [TSSOP] (see Microchip Packaging Specification 00000049BS.pdf)")
     (tags "SSOP 0.65")
     (path /5515D395/58F5B3F8/58F429E0)
@@ -2121,7 +2121,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x03_Pitch2.00mm (layer F.Cu) (tedit 56FA75DA) (tstamp 58F72904)
-    (at 32.5 66.550001)
+    (at 54.61 31.75)
     (descr "Through hole pin header, 1x03, 2.00mm pitch, single row")
     (tags "pin header single row")
     (path /5515D395/58F53F5B/58F54332)
@@ -2155,7 +2155,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x03_Pitch2.00mm (layer F.Cu) (tedit 56FA75DA) (tstamp 58F72915)
-    (at 32.5 66.550001)
+    (at 50.8 31.75)
     (descr "Through hole pin header, 1x03, 2.00mm pitch, single row")
     (tags "pin header single row")
     (path /5515D395/58F53F5B/58F5462C)
@@ -2189,7 +2189,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x02_Pitch2.00mm (layer F.Cu) (tedit 56FA75DA) (tstamp 58F72925)
-    (at 32.5 66.550001)
+    (at 8.89 46.99)
     (descr "Through hole pin header, 1x02, 2.00mm pitch, single row")
     (tags "pin header single row")
     (path /5515D395/58F53F5B/58F54BAF)
@@ -2221,7 +2221,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x03_Pitch2.00mm (layer F.Cu) (tedit 56FA75DA) (tstamp 58F72936)
-    (at 32.5 66.550001)
+    (at 46.99 31.75)
     (descr "Through hole pin header, 1x03, 2.00mm pitch, single row")
     (tags "pin header single row")
     (path /5515D395/58F63BD5/58F54332)
@@ -2255,7 +2255,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x03_Pitch2.00mm (layer F.Cu) (tedit 56FA75DA) (tstamp 58F72947)
-    (at 32.5 66.550001)
+    (at 43.18 31.75)
     (descr "Through hole pin header, 1x03, 2.00mm pitch, single row")
     (tags "pin header single row")
     (path /5515D395/58F63BD5/58F5462C)
@@ -2321,7 +2321,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_2x04 (layer F.Cu) (tedit 0) (tstamp 58F7296F)
-    (at 32.5 66.550001)
+    (at 36.83 39.37)
     (descr "Through hole pin header")
     (tags "pin header")
     (path /5515D395/58F8E5DD)
