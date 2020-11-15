@@ -29,4 +29,5 @@
   (lib (name atmel)(type Legacy)(uri "C:/Program Files/KiCad/share/kicad/library/atmel.lib")(options "")(descr ""))
   (lib (name contrib)(type Legacy)(uri "C:/Program Files/KiCad/share/kicad/library/contrib.lib")(options "")(descr ""))
   (lib (name valves)(type Legacy)(uri "C:/Program Files/KiCad/share/kicad/library/valves.lib")(options "")(descr ""))
+  (lib (name RPi_Hat-eagle-import)(type Legacy)(uri ${KIPRJMOD}/RPi_Hat-eagle-import.lib)(options "")(descr ""))
 )
