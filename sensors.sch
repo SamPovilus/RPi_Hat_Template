@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -241,15 +241,15 @@ Connection ~ 2300 2950
 Wire Wire Line
 	2300 2950 2300 2200
 Wire Wire Line
-	3750 1100 2900 1100
+	3750 1100 3600 1100
 Wire Wire Line
 	2050 1100 2050 900 
 $Comp
-L Connector:TestPoint SENSE_1_POWER1
+L Connector:TestPoint TP19
 U 1 1 5FC651BB
 P 2850 1800
-F 0 "SENSE_1_POWER1" H 2908 1918 50  0000 L CNN
-F 1 "TestPoint" H 2908 1827 50  0000 L CNN
+F 0 "TP19" H 2908 1918 50  0000 L CNN
+F 1 "SENSE_1_POWER" H 2908 1827 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 3050 1800 50  0001 C CNN
 F 3 "~" H 3050 1800 50  0001 C CNN
 	1    2850 1800
@@ -257,11 +257,11 @@ F 3 "~" H 3050 1800 50  0001 C CNN
 $EndComp
 Connection ~ 2850 1800
 $Comp
-L Connector:TestPoint 3.3V_TP_1
+L Connector:TestPoint TP20
 U 1 1 5FC65857
 P 2900 1100
-F 0 "3.3V_TP_1" H 2958 1218 50  0000 L CNN
-F 1 "TestPoint" H 2958 1127 50  0000 L CNN
+F 0 "TP20" H 2958 1218 50  0000 L CNN
+F 1 "3.3V_TP_1" H 2958 1127 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 3100 1100 50  0001 C CNN
 F 3 "~" H 3100 1100 50  0001 C CNN
 	1    2900 1100
@@ -273,7 +273,7 @@ L Connector:TestPoint TP2
 U 1 1 5FC66989
 P 2400 2950
 F 0 "TP2" H 2458 3068 50  0000 L CNN
-F 1 "TestPoint" H 2458 2977 50  0000 L CNN
+F 1 "GND" H 2458 2977 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 2600 2950 50  0001 C CNN
 F 3 "~" H 2600 2950 50  0001 C CNN
 	1    2400 2950
@@ -287,7 +287,7 @@ L Connector:TestPoint TP6
 U 1 1 5FC67A60
 P 3250 2950
 F 0 "TP6" H 3308 3068 50  0000 L CNN
-F 1 "TestPoint" H 3308 2977 50  0000 L CNN
+F 1 "GND" H 3308 2977 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 3450 2950 50  0001 C CNN
 F 3 "~" H 3450 2950 50  0001 C CNN
 	1    3250 2950
@@ -299,7 +299,7 @@ Wire Wire Line
 Wire Wire Line
 	10350 3250 9650 3250
 Wire Wire Line
-	9750 2250 10450 2250
+	9150 3250 8450 3250
 Wire Wire Line
 	9650 3350 10350 3350
 Wire Wire Line
@@ -318,37 +318,24 @@ Text GLabel 10350 3150 2    50   Input ~ 0
 SPI_1_CLK
 Text GLabel 10350 3050 2    50   Input ~ 0
 SPI_1_MOSI
-Text GLabel 10450 2250 2    50   Input ~ 0
+Text GLabel 8450 3250 0    50   Input ~ 0
 SPI_0_MISO
-Text GLabel 10450 2450 2    50   Input ~ 0
+Text GLabel 8450 3450 0    50   Input ~ 0
 SPI_0_CE_1
-Text GLabel 10450 2350 2    50   Input ~ 0
+Text GLabel 8450 3350 0    50   Input ~ 0
 SPI_0_CE_0
-Text GLabel 10450 2150 2    50   Input ~ 0
+Text GLabel 8450 3150 0    50   Input ~ 0
 SPI_0_CLK
-Text GLabel 10450 2050 2    50   Input ~ 0
+Text GLabel 8450 3050 0    50   Input ~ 0
 SPI_0_MOSI
 Wire Wire Line
-	9750 2450 10450 2450
+	9150 3450 8450 3450
 Wire Wire Line
-	9750 2350 10450 2350
+	9150 3350 8450 3350
 Wire Wire Line
-	9750 2150 10450 2150
+	9150 3150 8450 3150
 Wire Wire Line
-	9750 2050 10450 2050
-Wire Wire Line
-	4350 1100 5450 1100
-$Comp
-L Device:Jumper SENSE_1_POWER_EN1
-U 1 1 5FBE8BE9
-P 4050 1100
-F 0 "SENSE_1_POWER_EN1" H 4050 1364 50  0000 C CNN
-F 1 "Jumper" H 4050 1273 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 4050 1100 50  0001 C CNN
-F 3 "~" H 4050 1100 50  0001 C CNN
-	1    4050 1100
-	1    0    0    -1  
-$EndComp
+	9150 3050 8450 3050
 Wire Wire Line
 	2850 1800 3800 1800
 Text HLabel 5450 1100 2    50   Input ~ 0
@@ -383,12 +370,10 @@ Text HLabel 7800 2000 0    50   Input ~ 0
 SENSE_1_MOSI
 Text HLabel 7800 1700 0    50   Input ~ 0
 SENSE_1_SCLK
-Text HLabel 6850 3950 0    50   Input ~ 0
+Text HLabel 6100 4150 0    50   Input ~ 0
 SENSE_1_MISO_AG
 Text HLabel 7800 1400 0    50   Input ~ 0
 SENSE_1_CS_AG
-Text HLabel 6850 3750 0    50   Input ~ 0
-SENSE_1_MISO_M
 Text HLabel 7800 1150 0    50   Input ~ 0
 SENSE_1_CS_M
 Wire Wire Line
@@ -407,41 +392,8 @@ Text GLabel 8400 1700 2    50   Input ~ 0
 SPI_0_CLK
 Text GLabel 8400 2000 2    50   Input ~ 0
 SPI_0_MOSI
-$Comp
-L Device:Jumper JP3
-U 1 1 5FD32CB2
-P 7500 3750
-F 0 "JP3" H 7500 4014 50  0000 C CNN
-F 1 "Jumper" H 7500 3923 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 7500 3750 50  0001 C CNN
-F 3 "~" H 7500 3750 50  0001 C CNN
-	1    7500 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper JP4
-U 1 1 5FD33304
-P 7500 3950
-F 0 "JP4" H 7500 4214 50  0000 C CNN
-F 1 "Jumper" H 7500 4123 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 7500 3950 50  0001 C CNN
-F 3 "~" H 7500 3950 50  0001 C CNN
-	1    7500 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7800 3750 7800 3850
-Text GLabel 7950 3850 2    50   Input ~ 0
+Text GLabel 8000 4050 2    50   Input ~ 0
 SPI_0_MISO
-Wire Wire Line
-	7800 3850 7950 3850
-Connection ~ 7800 3850
-Wire Wire Line
-	7800 3850 7800 3950
-Wire Wire Line
-	6850 3750 7000 3750
-Wire Wire Line
-	7200 3950 7000 3950
 Text GLabel 5700 3000 2    50   Input ~ 0
 SENSE_1_INT_M
 Text GLabel 5700 2900 2    50   Input ~ 0
@@ -457,11 +409,11 @@ Wire Wire Line
 Wire Wire Line
 	5700 2600 5200 2600
 $Comp
-L Connector:TestPoint SENSE_1_CS_M1
+L Connector:TestPoint TP33
 U 1 1 5FD57E7D
 P 8050 1150
-F 0 "SENSE_1_CS_M1" H 8108 1268 50  0000 L CNN
-F 1 "TestPoint" H 8108 1177 50  0000 L CNN
+F 0 "TP33" H 8108 1268 50  0000 L CNN
+F 1 "SENSE_1_CS_M1" H 8108 1177 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 8250 1150 50  0001 C CNN
 F 3 "~" H 8250 1150 50  0001 C CNN
 	1    8050 1150
@@ -471,11 +423,11 @@ Connection ~ 8050 1150
 Wire Wire Line
 	8050 1150 8400 1150
 $Comp
-L Connector:TestPoint SENSE_1_CS_AG1
+L Connector:TestPoint TP34
 U 1 1 5FD5856B
 P 8050 1400
-F 0 "SENSE_1_CS_AG1" H 8108 1518 50  0000 L CNN
-F 1 "TestPoint" H 8108 1427 50  0000 L CNN
+F 0 "TP34" H 8108 1518 50  0000 L CNN
+F 1 "SENSE_1_CS_AG1" H 8108 1427 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 8250 1400 50  0001 C CNN
 F 3 "~" H 8250 1400 50  0001 C CNN
 	1    8050 1400
@@ -484,26 +436,15 @@ $EndComp
 Connection ~ 8050 1400
 Wire Wire Line
 	8050 1400 8400 1400
-$Comp
-L Connector:TestPoint SENSE_1_SCLK1
-U 1 1 5FD58B5E
-P 8100 1700
-F 0 "SENSE_1_SCLK1" H 8158 1818 50  0000 L CNN
-F 1 "TestPoint" H 8158 1727 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 8300 1700 50  0001 C CNN
-F 3 "~" H 8300 1700 50  0001 C CNN
-	1    8100 1700
-	1    0    0    -1  
-$EndComp
 Connection ~ 8100 1700
 Wire Wire Line
 	8100 1700 8400 1700
 $Comp
-L Connector:TestPoint SENSE_1_MOSI1
+L Connector:TestPoint TP35
 U 1 1 5FD59173
 P 8050 2000
-F 0 "SENSE_1_MOSI1" H 8108 2118 50  0000 L CNN
-F 1 "TestPoint" H 8108 2027 50  0000 L CNN
+F 0 "TP35" H 8108 2118 50  0000 L CNN
+F 1 "SENSE_1_MOSI1" H 8108 2027 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 8250 2000 50  0001 C CNN
 F 3 "~" H 8250 2000 50  0001 C CNN
 	1    8050 2000
@@ -513,39 +454,33 @@ Connection ~ 8050 2000
 Wire Wire Line
 	8050 2000 7800 2000
 $Comp
-L Connector:TestPoint SENSE_1_MISO_M2
+L Connector:TestPoint TP27
 U 1 1 5FD597AA
-P 7000 3750
-F 0 "SENSE_1_MISO_M2" H 7058 3868 50  0000 L CNN
-F 1 "TestPoint" H 7058 3777 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 7200 3750 50  0001 C CNN
-F 3 "~" H 7200 3750 50  0001 C CNN
-	1    7000 3750
+P 5800 4050
+F 0 "TP27" H 5858 4168 50  0000 L CNN
+F 1 "SEN1MISO_M" H 5858 4077 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 6000 4050 50  0001 C CNN
+F 3 "~" H 6000 4050 50  0001 C CNN
+	1    5800 4050
 	1    0    0    -1  
 $EndComp
-Connection ~ 7000 3750
-Wire Wire Line
-	7000 3750 7200 3750
 $Comp
-L Connector:TestPoint SENSE_1_MISO_AG2
+L Connector:TestPoint TP28
 U 1 1 5FD59E5D
-P 7000 3950
-F 0 "SENSE_1_MISO_AG2" H 7058 4068 50  0000 L CNN
-F 1 "TestPoint" H 7058 3977 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 7200 3950 50  0001 C CNN
-F 3 "~" H 7200 3950 50  0001 C CNN
-	1    7000 3950
+P 6550 4150
+F 0 "TP28" H 6608 4268 50  0000 L CNN
+F 1 "SEN1MISO_AG" H 6608 4177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 6750 4150 50  0001 C CNN
+F 3 "~" H 6750 4150 50  0001 C CNN
+	1    6550 4150
 	1    0    0    -1  
 $EndComp
-Connection ~ 7000 3950
-Wire Wire Line
-	7000 3950 6850 3950
 $Comp
-L Connector:TestPoint TP8
+L Connector:TestPoint TP24
 U 1 1 5FD5A5B7
 P 5250 2500
-F 0 "TP8" H 5308 2618 50  0000 L CNN
-F 1 "TestPoint" H 5308 2527 50  0000 L CNN
+F 0 "TP24" H 5308 2618 50  0000 L CNN
+F 1 "SENSE_1_INT_1_AG1" H 5308 2527 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 5450 2500 50  0001 C CNN
 F 3 "~" H 5450 2500 50  0001 C CNN
 	1    5250 2500
@@ -555,11 +490,11 @@ Connection ~ 5250 2500
 Wire Wire Line
 	5250 2500 5700 2500
 $Comp
-L Connector:TestPoint TP7
+L Connector:TestPoint TP23
 U 1 1 5FD5ADB8
 P 5200 2600
-F 0 "TP7" H 5258 2718 50  0000 L CNN
-F 1 "TestPoint" H 5258 2627 50  0000 L CNN
+F 0 "TP23" H 5258 2718 50  0000 L CNN
+F 1 "SENSE_1_INT_2_AG1" H 5258 2627 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 5400 2600 50  0001 C CNN
 F 3 "~" H 5400 2600 50  0001 C CNN
 	1    5200 2600
@@ -632,17 +567,6 @@ F 3 "" H 3450 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L RPi_Hat-eagle-import:10UF-6.3V-20%(0603) C6
-U 1 1 5FD66C27
-P 1950 6250
-F 0 "C6" H 2010 6365 59  0000 L BNN
-F 1 "10uF" H 2010 6165 59  0000 L BNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1950 6250 50  0001 C CNN
-F 3 "" H 1950 6250 50  0001 C CNN
-	1    1950 6250
-	-1   0    0    -1  
-$EndComp
-$Comp
 L RPi_Hat-eagle-import:10NF_10000PF-50V-10%(0603) C9
 U 1 1 5FD66C2D
 P 3050 6550
@@ -697,29 +621,6 @@ F 3 "" H 4150 6550 50  0001 C CNN
 	1    4150 6550
 	1    0    0    -1  
 $EndComp
-Text Label 1950 6050 0    10   ~ 0
-VDD
-Wire Wire Line
-	3450 6050 3450 5950
-Wire Wire Line
-	3450 6050 3550 6050
-Connection ~ 3450 6050
-Wire Wire Line
-	2750 6050 3450 6050
-Wire Wire Line
-	2750 6150 2750 6050
-Wire Wire Line
-	2350 6050 2350 5950
-Wire Wire Line
-	3450 5950 3550 5950
-Connection ~ 3450 5950
-Wire Wire Line
-	2350 5950 2500 5950
-Connection ~ 2350 5950
-Wire Wire Line
-	1950 5950 2350 5950
-Wire Wire Line
-	1950 6050 1950 5950
 Text Label 1950 7250 0    10   ~ 0
 GND
 Wire Wire Line
@@ -759,17 +660,6 @@ Wire Wire Line
 Wire Wire Line
 	3050 6350 3050 6250
 $Comp
-L power:+3.3V #PWR0113
-U 1 1 5FD66C6C
-P 1700 5050
-F 0 "#PWR0113" H 1700 4900 50  0001 C CNN
-F 1 "+3.3V" H 1715 5223 50  0000 C CNN
-F 2 "" H 1700 5050 50  0001 C CNN
-F 3 "" H 1700 5050 50  0001 C CNN
-	1    1700 5050
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0115
 U 1 1 5FD66C72
 P 2700 8500
@@ -801,42 +691,23 @@ Wire Wire Line
 Connection ~ 1950 7100
 Wire Wire Line
 	1950 7100 1950 6350
-Wire Wire Line
-	3400 5250 2550 5250
-Wire Wire Line
-	1700 5250 1700 5050
 $Comp
-L Connector:TestPoint SENSE_2_POWER1
+L Connector:TestPoint TP17
 U 1 1 5FD66C88
 P 2500 5950
-F 0 "SENSE_2_POWER1" H 2558 6068 50  0000 L CNN
-F 1 "TestPoint" H 2558 5977 50  0000 L CNN
+F 0 "TP17" H 2558 6068 50  0000 L CNN
+F 1 "SENSE_2_POWER" H 2558 5977 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 2700 5950 50  0001 C CNN
 F 3 "~" H 2700 5950 50  0001 C CNN
 	1    2500 5950
 	1    0    0    -1  
 $EndComp
-Connection ~ 2500 5950
-$Comp
-L Connector:TestPoint 3.3V_TP2
-U 1 1 5FD66C8F
-P 2550 5250
-F 0 "3.3V_TP2" H 2608 5368 50  0000 L CNN
-F 1 "TestPoint" H 2608 5277 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 2750 5250 50  0001 C CNN
-F 3 "~" H 2750 5250 50  0001 C CNN
-	1    2550 5250
-	1    0    0    -1  
-$EndComp
-Connection ~ 2550 5250
-Wire Wire Line
-	2550 5250 1700 5250
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5FD66C97
 P 2050 7100
 F 0 "TP1" H 2108 7218 50  0000 L CNN
-F 1 "TestPoint" H 2108 7127 50  0000 L CNN
+F 1 "GND" H 2108 7127 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 2250 7100 50  0001 C CNN
 F 3 "~" H 2250 7100 50  0001 C CNN
 	1    2050 7100
@@ -850,7 +721,7 @@ L Connector:TestPoint TP5
 U 1 1 5FD66CA7
 P 2900 7100
 F 0 "TP5" H 2958 7218 50  0000 L CNN
-F 1 "TestPoint" H 2958 7127 50  0000 L CNN
+F 1 "GND" H 2958 7127 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 3100 7100 50  0001 C CNN
 F 3 "~" H 3100 7100 50  0001 C CNN
 	1    2900 7100
@@ -859,24 +730,7 @@ $EndComp
 Connection ~ 2900 7100
 Wire Wire Line
 	2900 7100 3050 7100
-Wire Wire Line
-	4000 5250 5100 5250
-$Comp
-L Device:Jumper SENSE_2_POWER_EN1
-U 1 1 5FD66CB0
-P 3700 5250
-F 0 "SENSE_2_POWER_EN1" H 3700 5514 50  0000 C CNN
-F 1 "Jumper" H 3700 5423 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 3700 5250 50  0001 C CNN
-F 3 "~" H 3700 5250 50  0001 C CNN
-	1    3700 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2500 5950 3450 5950
-Text HLabel 5100 5250 2    50   Input ~ 0
-SENSE_2_POWER
-Text HLabel 1950 5950 0    50   Input ~ 0
+Text HLabel 1400 5950 0    50   Input ~ 0
 SENSE_2_POWER
 Text HLabel 5350 5950 2    50   Input ~ 0
 SENSE_2_MOSI
@@ -906,12 +760,8 @@ Text HLabel 7450 6150 0    50   Input ~ 0
 SENSE_2_MOSI
 Text HLabel 7450 5850 0    50   Input ~ 0
 SENSE_2_SCLK
-Text HLabel 6500 8100 0    50   Input ~ 0
-SENSE_1_MISO_AG
 Text HLabel 7450 5550 0    50   Input ~ 0
 SENSE_2_CS_AG
-Text HLabel 6500 7900 0    50   Input ~ 0
-SENSE_1_MISO_M
 Text HLabel 7450 5300 0    50   Input ~ 0
 SENSE_2_CS_M
 Wire Wire Line
@@ -930,41 +780,8 @@ Text GLabel 8050 5850 2    50   Input ~ 0
 SPI_1_CLK
 Text GLabel 8050 6150 2    50   Input ~ 0
 SPI_1_MOSI
-$Comp
-L Device:Jumper JP1
-U 1 1 5FD66CD3
-P 7150 7900
-F 0 "JP1" H 7150 8164 50  0000 C CNN
-F 1 "Jumper" H 7150 8073 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 7150 7900 50  0001 C CNN
-F 3 "~" H 7150 7900 50  0001 C CNN
-	1    7150 7900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper JP2
-U 1 1 5FD66CD9
-P 7150 8100
-F 0 "JP2" H 7150 8364 50  0000 C CNN
-F 1 "Jumper" H 7150 8273 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 7150 8100 50  0001 C CNN
-F 3 "~" H 7150 8100 50  0001 C CNN
-	1    7150 8100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7450 7900 7450 8000
-Text GLabel 7600 8000 2    50   Input ~ 0
-SPI_0_MISO
-Wire Wire Line
-	7450 8000 7600 8000
-Connection ~ 7450 8000
-Wire Wire Line
-	7450 8000 7450 8100
-Wire Wire Line
-	6500 7900 6650 7900
-Wire Wire Line
-	6850 8100 6650 8100
+Text GLabel 8000 4250 2    50   Input ~ 0
+SPI_1_MISO
 Text GLabel 5350 7150 2    50   Input ~ 0
 SENSE_2_INT_M
 Text GLabel 5350 7050 2    50   Input ~ 0
@@ -980,11 +797,11 @@ Wire Wire Line
 Wire Wire Line
 	5350 6750 4800 6750
 $Comp
-L Connector:TestPoint SENSE_2_CS_M1
+L Connector:TestPoint TP29
 U 1 1 5FD66CED
 P 7700 5300
-F 0 "SENSE_2_CS_M1" H 7758 5418 50  0000 L CNN
-F 1 "TestPoint" H 7758 5327 50  0000 L CNN
+F 0 "TP29" H 7758 5418 50  0000 L CNN
+F 1 "SENSE_2_CS_M1" H 7758 5327 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 7900 5300 50  0001 C CNN
 F 3 "~" H 7900 5300 50  0001 C CNN
 	1    7700 5300
@@ -994,11 +811,11 @@ Connection ~ 7700 5300
 Wire Wire Line
 	7700 5300 8050 5300
 $Comp
-L Connector:TestPoint SENSE_2_CS_AG1
+L Connector:TestPoint TP30
 U 1 1 5FD66CF5
 P 7700 5550
-F 0 "SENSE_2_CS_AG1" H 7758 5668 50  0000 L CNN
-F 1 "TestPoint" H 7758 5577 50  0000 L CNN
+F 0 "TP30" H 7758 5668 50  0000 L CNN
+F 1 "SENSE_2_CS_AG1" H 7758 5577 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 7900 5550 50  0001 C CNN
 F 3 "~" H 7900 5550 50  0001 C CNN
 	1    7700 5550
@@ -1008,11 +825,11 @@ Connection ~ 7700 5550
 Wire Wire Line
 	7700 5550 8050 5550
 $Comp
-L Connector:TestPoint SENSE_2_SCLK1
+L Connector:TestPoint TP32
 U 1 1 5FD66CFD
 P 7750 5850
-F 0 "SENSE_2_SCLK1" H 7808 5968 50  0000 L CNN
-F 1 "TestPoint" H 7808 5877 50  0000 L CNN
+F 0 "TP32" H 7808 5968 50  0000 L CNN
+F 1 "SENSE_2_SCLK1" H 7808 5877 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 7950 5850 50  0001 C CNN
 F 3 "~" H 7950 5850 50  0001 C CNN
 	1    7750 5850
@@ -1022,11 +839,11 @@ Connection ~ 7750 5850
 Wire Wire Line
 	7750 5850 8050 5850
 $Comp
-L Connector:TestPoint SENSE_2_MOSI1
+L Connector:TestPoint TP31
 U 1 1 5FD66D05
 P 7700 6150
-F 0 "SENSE_2_MOSI1" H 7758 6268 50  0000 L CNN
-F 1 "TestPoint" H 7758 6177 50  0000 L CNN
+F 0 "TP31" H 7758 6268 50  0000 L CNN
+F 1 "SENSE_2_MOSI1" H 7758 6177 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 7900 6150 50  0001 C CNN
 F 3 "~" H 7900 6150 50  0001 C CNN
 	1    7700 6150
@@ -1036,39 +853,11 @@ Connection ~ 7700 6150
 Wire Wire Line
 	7700 6150 7450 6150
 $Comp
-L Connector:TestPoint SENSE_1_MISO_M1
-U 1 1 5FD66D0D
-P 6650 7900
-F 0 "SENSE_1_MISO_M1" H 6708 8018 50  0000 L CNN
-F 1 "TestPoint" H 6708 7927 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 6850 7900 50  0001 C CNN
-F 3 "~" H 6850 7900 50  0001 C CNN
-	1    6650 7900
-	1    0    0    -1  
-$EndComp
-Connection ~ 6650 7900
-Wire Wire Line
-	6650 7900 6850 7900
-$Comp
-L Connector:TestPoint SENSE_1_MISO_AG1
-U 1 1 5FD66D15
-P 6650 8100
-F 0 "SENSE_1_MISO_AG1" H 6708 8218 50  0000 L CNN
-F 1 "TestPoint" H 6708 8127 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 6850 8100 50  0001 C CNN
-F 3 "~" H 6850 8100 50  0001 C CNN
-	1    6650 8100
-	1    0    0    -1  
-$EndComp
-Connection ~ 6650 8100
-Wire Wire Line
-	6650 8100 6500 8100
-$Comp
-L Connector:TestPoint SENSE_2_INT_1_AG1
+L Connector:TestPoint TP22
 U 1 1 5FD66D1D
 P 4950 6650
-F 0 "SENSE_2_INT_1_AG1" H 5008 6768 50  0000 L CNN
-F 1 "TestPoint" H 5008 6677 50  0000 L CNN
+F 0 "TP22" H 5008 6768 50  0000 L CNN
+F 1 "SENSE_2_INT_1_AG1" H 5008 6677 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 5150 6650 50  0001 C CNN
 F 3 "~" H 5150 6650 50  0001 C CNN
 	1    4950 6650
@@ -1078,11 +867,11 @@ Connection ~ 4950 6650
 Wire Wire Line
 	4950 6650 5350 6650
 $Comp
-L Connector:TestPoint SENSE_2_INT_2_AG1
+L Connector:TestPoint TP21
 U 1 1 5FD66D25
 P 4800 6750
-F 0 "SENSE_2_INT_2_AG1" H 4858 6868 50  0000 L CNN
-F 1 "TestPoint" H 4858 6777 50  0000 L CNN
+F 0 "TP21" H 4858 6868 50  0000 L CNN
+F 1 "SENSE_2_INT_2_AG1" H 4858 6777 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 5000 6750 50  0001 C CNN
 F 3 "~" H 5000 6750 50  0001 C CNN
 	1    4800 6750
@@ -1098,65 +887,21 @@ Wire Wire Line
 Wire Wire Line
 	4750 6850 5350 6850
 Wire Wire Line
-	2050 1100 2900 1100
+	2050 1100 2350 1100
 Wire Wire Line
 	2350 7100 2700 7100
 Wire Wire Line
 	2700 2950 3050 2950
 $Comp
-L Connector:Conn_01x07_Male SPI0
-U 1 1 5FD9B376
-P 9550 2250
-F 0 "SPI0" H 9658 2731 50  0000 C CNN
-F 1 "Conn_01x07_Male" H 9658 2640 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 9550 2250 50  0001 C CNN
-F 3 "~" H 9550 2250 50  0001 C CNN
-	1    9550 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x07_Male SPI_1
-U 1 1 5FD9C5F2
-P 9450 3250
-F 0 "SPI_1" H 9558 3731 50  0000 C CNN
-F 1 "Conn_01x07_Male" H 9558 3640 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 9450 3250 50  0001 C CNN
-F 3 "~" H 9450 3250 50  0001 C CNN
-	1    9450 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0116
-U 1 1 5FD9D755
-P 9950 1950
-F 0 "#PWR0116" H 9950 1700 50  0001 C CNN
-F 1 "GND" H 9955 1777 50  0000 C CNN
-F 2 "" H 9950 1950 50  0001 C CNN
-F 3 "" H 9950 1950 50  0001 C CNN
-	1    9950 1950
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0117
 U 1 1 5FD9E41A
-P 9950 2550
-F 0 "#PWR0117" H 9950 2300 50  0001 C CNN
-F 1 "GND" H 9955 2377 50  0000 C CNN
-F 2 "" H 9950 2550 50  0001 C CNN
-F 3 "" H 9950 2550 50  0001 C CNN
-	1    9950 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0118
-U 1 1 5FD9EFB8
-P 9950 2950
-F 0 "#PWR0118" H 9950 2700 50  0001 C CNN
-F 1 "GND" H 9955 2777 50  0000 C CNN
-F 2 "" H 9950 2950 50  0001 C CNN
-F 3 "" H 9950 2950 50  0001 C CNN
-	1    9950 2950
-	1    0    0    -1  
+P 8950 3550
+F 0 "#PWR0117" H 8950 3300 50  0001 C CNN
+F 1 "GND" H 8955 3377 50  0000 C CNN
+F 2 "" H 8950 3550 50  0001 C CNN
+F 3 "" H 8950 3550 50  0001 C CNN
+	1    8950 3550
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0119
@@ -1172,9 +917,180 @@ $EndComp
 Wire Wire Line
 	9650 3550 9950 3550
 Wire Wire Line
-	9650 2950 9950 2950
+	9150 3550 8950 3550
+$Comp
+L Connector:TestPoint TP36
+U 1 1 5FD58B5E
+P 8100 1700
+F 0 "TP36" H 8158 1818 50  0000 L CNN
+F 1 "SENSE_1_SCLK1" H 8158 1727 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 8300 1700 50  0001 C CNN
+F 3 "~" H 8300 1700 50  0001 C CNN
+	1    8100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J8
+U 1 1 5FC325DB
+P 9350 3250
+F 0 "J8" H 9400 3667 50  0000 C CNN
+F 1 "SPI" H 9400 3576 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x06_P2.00mm_Vertical_SMD" H 9350 3250 50  0001 C CNN
+F 3 "~" H 9350 3250 50  0001 C CNN
+	1    9350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP18
+U 1 1 5FC56E1A
+P 2350 1100
+F 0 "TP18" H 2408 1218 50  0000 L CNN
+F 1 "3.3V_TP_1" H 2408 1127 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 2550 1100 50  0001 C CNN
+F 3 "~" H 2550 1100 50  0001 C CNN
+	1    2350 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 2350 1100
 Wire Wire Line
-	9750 2550 9950 2550
+	2350 1100 2900 1100
+Text HLabel 5450 1200 2    50   Input ~ 0
+SENSE_2_POWER
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J2
+U 1 1 5FC7B661
+P 3950 1100
+F 0 "J2" H 4000 1317 50  0000 C CNN
+F 1 "SEN_POW_EN" H 4000 1226 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x02_P2.00mm_Vertical_SMD" H 3950 1100 50  0001 C CNN
+F 3 "~" H 3950 1100 50  0001 C CNN
+	1    3950 1100
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	9750 1950 9950 1950
+	3750 1200 3600 1200
+Wire Wire Line
+	3600 1200 3600 1100
+Connection ~ 3600 1100
+Wire Wire Line
+	3600 1100 2900 1100
+Wire Wire Line
+	4250 1100 5450 1100
+Wire Wire Line
+	4250 1200 5450 1200
+Text HLabel 5700 4050 0    50   Input ~ 0
+SENSE_1_MISO_M
+Wire Wire Line
+	5800 4050 5700 4050
+Connection ~ 5800 4050
+Wire Wire Line
+	6100 4150 6550 4150
+Wire Wire Line
+	6550 4150 7200 4150
+Connection ~ 6550 4150
+Wire Wire Line
+	5800 4050 7200 4050
+Text HLabel 6100 4350 0    50   Input ~ 0
+SENSE_2_MISO_AG
+$Comp
+L Connector:TestPoint TP25
+U 1 1 5FCE5D42
+P 5800 4250
+F 0 "TP25" H 5858 4368 50  0000 L CNN
+F 1 "SEN2MISO_M" H 5858 4277 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 6000 4250 50  0001 C CNN
+F 3 "~" H 6000 4250 50  0001 C CNN
+	1    5800 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP26
+U 1 1 5FCE5D48
+P 6550 4350
+F 0 "TP26" H 6608 4468 50  0000 L CNN
+F 1 "SEN2MISO_AG" H 6608 4377 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 6750 4350 50  0001 C CNN
+F 3 "~" H 6750 4350 50  0001 C CNN
+	1    6550 4350
+	1    0    0    -1  
+$EndComp
+Text HLabel 5700 4250 0    50   Input ~ 0
+SENSE_2_MISO_M
+Wire Wire Line
+	5800 4250 5700 4250
+Connection ~ 5800 4250
+Wire Wire Line
+	6100 4350 6550 4350
+Wire Wire Line
+	6550 4350 7200 4350
+Connection ~ 6550 4350
+Wire Wire Line
+	5800 4250 7200 4250
+Wire Wire Line
+	7700 4050 7850 4050
+Wire Wire Line
+	8000 4250 7850 4250
+Wire Wire Line
+	7700 4350 7850 4350
+Wire Wire Line
+	7850 4350 7850 4250
+Connection ~ 7850 4250
+Wire Wire Line
+	7850 4250 7700 4250
+Wire Wire Line
+	7700 4150 7850 4150
+Wire Wire Line
+	7850 4150 7850 4050
+Connection ~ 7850 4050
+Wire Wire Line
+	7850 4050 8000 4050
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J3
+U 1 1 5FCA1124
+P 7400 4150
+F 0 "J3" H 7450 4467 50  0000 C CNN
+F 1 "SPI_MISO_EN" H 7450 4376 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x04_P2.00mm_Vertical_SMD" H 7400 4150 50  0001 C CNN
+F 3 "~" H 7400 4150 50  0001 C CNN
+	1    7400 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L RPi_Hat-eagle-import:10UF-6.3V-20%(0603) C6
+U 1 1 5FD66C27
+P 1950 6250
+F 0 "C6" H 2010 6365 59  0000 L BNN
+F 1 "10uF" H 2010 6165 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1950 6250 50  0001 C CNN
+F 3 "" H 1950 6250 50  0001 C CNN
+	1    1950 6250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 6050 3450 6050
+Wire Wire Line
+	3450 6050 3450 5950
+Wire Wire Line
+	3450 5950 3550 5950
+Wire Wire Line
+	3450 5950 2750 5950
+Connection ~ 3450 5950
+Wire Wire Line
+	2500 5950 2350 5950
+Connection ~ 2500 5950
+Wire Wire Line
+	1950 6050 1950 5950
+Connection ~ 1950 5950
+Wire Wire Line
+	1950 5950 1400 5950
+Wire Wire Line
+	2350 6050 2350 5950
+Connection ~ 2350 5950
+Wire Wire Line
+	2350 5950 1950 5950
+Wire Wire Line
+	2750 6150 2750 5950
+Connection ~ 2750 5950
+Wire Wire Line
+	2750 5950 2500 5950
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -24,5 +24,11 @@ S 3000 2050 1750 2100
 U 5FB06CD3
 F0 "sensors" 50
 F1 "sensors.sch" 50
+$EndSheet
+$Sheet
+S 1500 4850 1000 950 
+U 5FB8D37C
+F0 "motor_control" 50
+F1 "motor_control.sch" 50
 $EndSheet
 $EndSCHEMATC

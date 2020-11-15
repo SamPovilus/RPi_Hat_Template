@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -28,42 +28,16 @@ F 3 "" H 2750 2700 60  0000 C CNN
 $EndComp
 Text Notes 2950 5000 0    60   Italic 0
 Surface Mount Connector
-Text GLabel 2350 4400 0    50   Input ~ 0
-SPI_1_MISO
-Text GLabel 2350 3200 0    50   Input ~ 0
-SPI_1_CE_1
 Text GLabel 4650 3200 2    50   Input ~ 0
 SPI_1_CE_0
 Text GLabel 4650 4600 2    50   Input ~ 0
 SPI_1_CLK
 Text GLabel 4650 4500 2    50   Input ~ 0
 SPI_1_MOSI
-Text GLabel 2300 3700 0    50   Input ~ 0
-SPI_0_MISO
 Text GLabel 4650 3900 2    50   Input ~ 0
 SPI_0_CE_1
 Text GLabel 4650 3800 2    50   Input ~ 0
 SPI_0_CE_0
-Text GLabel 2300 3800 0    50   Input ~ 0
-SPI_0_CLK
-Text GLabel 2300 3600 0    50   Input ~ 0
-SPI_0_MOSI
-Text GLabel 4650 3700 2    50   Input ~ 0
-SENSE_1_INT_M
-Text GLabel 4650 3500 2    50   Input ~ 0
-SENSE_1_DRDY_M
-Text GLabel 4650 4400 2    50   Input ~ 0
-SENSE_1_INT_2_AG
-Text GLabel 2350 4500 0    50   Input ~ 0
-SENSE_1_INT_1_AG
-Text GLabel 4650 4200 2    50   Input ~ 0
-SENSE_2_INT_M
-Text GLabel 4650 4000 2    50   Input ~ 0
-SENSE_2_DRDY_M
-Text GLabel 4650 3400 2    50   Input ~ 0
-SENSE_2_INT_2_AG
-Text GLabel 4650 3100 2    50   Input ~ 0
-SENSE_2_INT_1_AG
 Wire Wire Line
 	2350 3200 2550 3200
 Wire Wire Line
@@ -77,25 +51,11 @@ Wire Wire Line
 Wire Wire Line
 	2550 4500 2350 4500
 Wire Wire Line
-	4450 3100 4650 3100
-Wire Wire Line
 	4650 3200 4450 3200
-Wire Wire Line
-	4450 3400 4650 3400
-Wire Wire Line
-	4650 3500 4450 3500
-Wire Wire Line
-	4650 3700 4450 3700
 Wire Wire Line
 	4650 3800 4450 3800
 Wire Wire Line
 	4450 3900 4650 3900
-Wire Wire Line
-	4650 4000 4450 4000
-Wire Wire Line
-	4650 4200 4450 4200
-Wire Wire Line
-	4450 4400 4650 4400
 Wire Wire Line
 	4450 4500 4650 4500
 Wire Wire Line
@@ -227,7 +187,7 @@ F 3 "" H 4600 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4600 2700 4450 2700
+	4600 2700 4500 2700
 Wire Wire Line
 	4600 2700 4600 2800
 Wire Wire Line
@@ -248,4 +208,153 @@ F 3 "" H 2400 3500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2550 3500 2400 3500
+Text GLabel 4650 3000 2    50   Input ~ 0
+MOTOR_1_STEP
+Text GLabel 4650 3400 2    50   Input ~ 0
+MOTOR_4_STEP
+Text GLabel 4650 3500 2    50   Input ~ 0
+MOTOR_4_DIRECTION
+Text GLabel 4650 3100 2    50   Input ~ 0
+SENSOR_2_INT_1
+Text GLabel 4650 4000 2    50   Input ~ 0
+MOTOR_2_EN
+Text GLabel 4650 3700 2    50   Input ~ 0
+MOTOR_3_EN
+Wire Wire Line
+	4450 3000 4650 3000
+Wire Wire Line
+	4450 3100 4650 3100
+Wire Wire Line
+	4450 3400 4650 3400
+Wire Wire Line
+	4450 3500 4650 3500
+Wire Wire Line
+	4450 3700 4650 3700
+Wire Wire Line
+	4450 4000 4650 4000
+Wire Wire Line
+	2350 4300 2550 4300
+Wire Wire Line
+	2350 4200 2550 4200
+Wire Wire Line
+	2350 4100 2550 4100
+Wire Wire Line
+	2350 4000 2550 4000
+Wire Wire Line
+	2350 3400 2550 3400
+Wire Wire Line
+	2350 3300 2550 3300
+Wire Wire Line
+	2350 3000 2550 3000
+Text GLabel 2350 4000 0    50   Input ~ 0
+MOTOR_4_EN
+Text GLabel 2350 3400 0    50   Input ~ 0
+MOTOR_1_EN
+Text GLabel 2350 4100 0    50   Input ~ 0
+MOTOR_3_DIRECTION
+Text GLabel 2350 4300 0    50   Input ~ 0
+MOTOR_3_STEP
+Text GLabel 2350 4200 0    50   Input ~ 0
+MOTOR_2_STEP
+Text GLabel 2350 3300 0    50   Input ~ 0
+MOTOR_2_DIRECTION
+Text GLabel 2350 3000 0    50   Input ~ 0
+MOTOR_1_DIRECTION
+Text GLabel 2350 4500 0    50   Input ~ 0
+SENSE_1_INT_1_AG
+Text GLabel 2300 3600 0    50   Input ~ 0
+SPI_0_MOSI
+Text GLabel 2300 3800 0    50   Input ~ 0
+SPI_0_CLK
+Text GLabel 2300 3700 0    50   Input ~ 0
+SPI_0_MISO
+Text GLabel 2350 3200 0    50   Input ~ 0
+SPI_1_CE_1
+Text GLabel 2350 4400 0    50   Input ~ 0
+SPI_1_MISO
+$Comp
+L Connector:Conn_01x04_Male j1
+U 1 1 5FBA10EB
+P 800 2700
+F 0 "j1" H 908 2981 50  0000 C CNN
+F 1 "I2C_1" H 908 2890 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left" H 800 2700 50  0001 C CNN
+F 3 "~" H 800 2700 50  0001 C CNN
+	1    800  2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2900 1000 2900
+Wire Wire Line
+	1000 2800 2550 2800
+$Comp
+L power:GND #PWR0120
+U 1 1 5FBA378E
+P 1100 2700
+F 0 "#PWR0120" H 1100 2450 50  0001 C CNN
+F 1 "GND" H 1105 2527 50  0000 C CNN
+F 2 "" H 1100 2700 50  0001 C CNN
+F 3 "" H 1100 2700 50  0001 C CNN
+	1    1100 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0121
+U 1 1 5FBA3D93
+P 1600 2050
+F 0 "#PWR0121" H 1600 1900 50  0001 C CNN
+F 1 "+3.3V" H 1615 2223 50  0000 C CNN
+F 2 "" H 1600 2050 50  0001 C CNN
+F 3 "" H 1600 2050 50  0001 C CNN
+	1    1600 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0122
+U 1 1 5FBA43AF
+P 1600 2650
+F 0 "#PWR0122" H 1600 2500 50  0001 C CNN
+F 1 "+5V" H 1615 2823 50  0000 C CNN
+F 2 "" H 1600 2650 50  0001 C CNN
+F 3 "" H 1600 2650 50  0001 C CNN
+	1    1600 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open I2C_HEADER_VOLTAGE_SELECT1
+U 1 1 5FBA4B22
+P 1350 2300
+F 0 "I2C_HEADER_VOLTAGE_SELECT1" V 1304 2386 50  0000 L CNN
+F 1 "Jumper_3_Open" V 1395 2386 50  0000 L CNN
+F 2 "Connector_PinSocket_2.00mm:PinSocket_1x03_P2.00mm_Vertical_SMD_Pin1Left" H 1350 2300 50  0001 C CNN
+F 3 "~" H 1350 2300 50  0001 C CNN
+	1    1350 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1600 2650 1350 2650
+Wire Wire Line
+	1350 2650 1350 2550
+Wire Wire Line
+	1200 2300 1200 2600
+Wire Wire Line
+	1200 2600 1000 2600
+Wire Wire Line
+	1600 2050 1350 2050
+Wire Wire Line
+	1000 2700 1100 2700
+$Comp
+L Connector:TestPoint TP37
+U 1 1 5FDDDB06
+P 4500 2700
+F 0 "TP37" H 4558 2818 50  0000 L CNN
+F 1 "5v" H 4558 2727 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 4700 2700 50  0001 C CNN
+F 3 "~" H 4700 2700 50  0001 C CNN
+	1    4500 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 2700
+Wire Wire Line
+	4500 2700 4450 2700
 $EndSCHEMATC
