@@ -215,7 +215,7 @@ MOTOR_4_STEP
 Text GLabel 4650 3500 2    50   Input ~ 0
 MOTOR_4_DIRECTION
 Text GLabel 4650 3100 2    50   Input ~ 0
-SENSOR_2_INT_1
+SENSE_2_INT_1
 Text GLabel 4650 4000 2    50   Input ~ 0
 MOTOR_2_EN
 Text GLabel 4650 3700 2    50   Input ~ 0
@@ -261,7 +261,7 @@ MOTOR_2_DIRECTION
 Text GLabel 2350 3000 0    50   Input ~ 0
 MOTOR_1_DIRECTION
 Text GLabel 2350 4500 0    50   Input ~ 0
-SENSE_1_INT_1_AG
+SENSE_1_INT_1
 Text GLabel 2300 3600 0    50   Input ~ 0
 SPI_0_MOSI
 Text GLabel 2300 3800 0    50   Input ~ 0
@@ -326,7 +326,7 @@ U 1 1 5FBA4B22
 P 1350 2300
 F 0 "I2C_HEADER_VOLTAGE_SELECT1" V 1304 2386 50  0000 L CNN
 F 1 "Jumper_3_Open" V 1395 2386 50  0000 L CNN
-F 2 "Connector_PinSocket_2.00mm:PinSocket_1x03_P2.00mm_Vertical_SMD_Pin1Left" H 1350 2300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical_SMD_Pin1Left" H 1350 2300 50  0001 C CNN
 F 3 "~" H 1350 2300 50  0001 C CNN
 	1    1350 2300
 	0    1    1    0   

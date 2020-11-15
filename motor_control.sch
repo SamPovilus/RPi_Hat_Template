@@ -766,10 +766,10 @@ F 3 "~" H 7750 4700 50  0001 C CNN
 $EndComp
 Connection ~ 7550 4700
 $Comp
-L Jumper:Jumper_3_Open JP?
+L Jumper:Jumper_3_Open JP1
 U 1 1 5FE0BEEA
 P 2050 1150
-F 0 "JP?" V 2004 1237 50  0000 L CNN
+F 0 "JP1" V 2004 1237 50  0000 L CNN
 F 1 "TRANSISTOR_SOURCE_SELECT" V 2095 1237 50  0000 L CNN
 F 2 "Connector_PinSocket_2.00mm:PinSocket_1x03_P2.00mm_Vertical_SMD_Pin1Left" H 2050 1150 50  0001 C CNN
 F 3 "~" H 2050 1150 50  0001 C CNN
@@ -832,10 +832,10 @@ F 3 "" H 3500 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J9
 U 1 1 5FE12519
 P 3900 1050
-F 0 "J?" H 3980 1042 50  0000 L CNN
+F 0 "J9" H 3980 1042 50  0000 L CNN
 F 1 "EXTERNAL_POWER" H 3980 951 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 3900 1050 50  0001 C CNN
 F 3 "~" H 3900 1050 50  0001 C CNN

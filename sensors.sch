@@ -16,61 +16,6 @@ $EndDescr
 Text Notes 1200 900  0    85   ~ 0
 LSM9DS1
 $Comp
-L RPi_Hat-eagle-import:GND #GND05
-U 1 1 EF27308A
-P 2300 3200
-F 0 "#GND05" H 2300 3200 50  0001 C CNN
-F 1 "GND" H 2200 3100 59  0000 L BNN
-F 2 "" H 2300 3200 50  0001 C CNN
-F 3 "" H 2300 3200 50  0001 C CNN
-	1    2300 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L RPi_Hat-eagle-import:GND #GND04
-U 1 1 D896219B
-P 2700 3200
-F 0 "#GND04" H 2700 3200 50  0001 C CNN
-F 1 "GND" H 2600 3100 59  0000 L BNN
-F 2 "" H 2700 3200 50  0001 C CNN
-F 3 "" H 2700 3200 50  0001 C CNN
-	1    2700 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L RPi_Hat-eagle-import:GND #GND03
-U 1 1 7679BDCC
-P 3100 3200
-F 0 "#GND03" H 3100 3200 50  0001 C CNN
-F 1 "GND" H 3000 3100 59  0000 L BNN
-F 2 "" H 3100 3200 50  0001 C CNN
-F 3 "" H 3100 3200 50  0001 C CNN
-	1    3100 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L RPi_Hat-eagle-import:GND #GND02
-U 1 1 13A376EC
-P 3400 3200
-F 0 "#GND02" H 3400 3200 50  0001 C CNN
-F 1 "GND" H 3300 3100 59  0000 L BNN
-F 2 "" H 3400 3200 50  0001 C CNN
-F 3 "" H 3400 3200 50  0001 C CNN
-	1    3400 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L RPi_Hat-eagle-import:GND #GND01
-U 1 1 DB8695AC
-P 3800 3200
-F 0 "#GND01" H 3800 3200 50  0001 C CNN
-F 1 "GND" H 3700 3100 59  0000 L BNN
-F 2 "" H 3800 3200 50  0001 C CNN
-F 3 "" H 3800 3200 50  0001 C CNN
-	1    3800 3200
-	1    0    0    -1  
-$EndComp
-$Comp
 L RPi_Hat-eagle-import:10UF-6.3V-20%(0603) C4
 U 1 1 D8933479
 P 2300 2100
@@ -79,28 +24,6 @@ F 1 "10uF" H 2360 2015 59  0000 L BNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2300 2100 50  0001 C CNN
 F 3 "" H 2300 2100 50  0001 C CNN
 	1    2300 2100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L RPi_Hat-eagle-import:10NF_10000PF-50V-10%(0603) C5
-U 1 1 3FE26454
-P 3400 2400
-F 0 "C5" H 3460 2515 59  0000 L BNN
-F 1 "10nF" H 3460 2315 59  0000 L BNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3400 2400 50  0001 C CNN
-F 3 "" H 3400 2400 50  0001 C CNN
-	1    3400 2400
-	-1   0    0    -1  
-$EndComp
-$Comp
-L RPi_Hat-eagle-import:0.1UF-25V(+80_-20%)(0603) C1
-U 1 1 F1C90C04
-P 3800 2500
-F 0 "C1" H 3860 2615 59  0000 L BNN
-F 1 "0.1uF" H 3860 2415 59  0000 L BNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3800 2500 50  0001 C CNN
-F 3 "" H 3800 2500 50  0001 C CNN
-	1    3800 2500
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -125,23 +48,10 @@ F 3 "" H 3100 2200 50  0001 C CNN
 	1    3100 2200
 	-1   0    0    -1  
 $EndComp
-$Comp
-L RPi_Hat-eagle-import:LSM9DS1 U1
-U 1 1 F9562130
-P 4500 2400
-F 0 "U1" H 4000 3150 59  0000 L CNN
-F 1 "LSM9DS1" H 4000 1650 59  0000 L CNN
-F 2 "Package_LGA:LGA-24L_3x3.5mm_P0.43mm" H 4500 2400 50  0001 C CNN
-F 3 "" H 4500 2400 50  0001 C CNN
-	1    4500 2400
-	1    0    0    -1  
-$EndComp
 Text Label 2300 1900 0    10   ~ 0
 VDD
 Wire Wire Line
 	3800 1900 3800 1800
-Wire Wire Line
-	3800 1900 3900 1900
 Connection ~ 3800 1900
 Wire Wire Line
 	3100 1900 3800 1900
@@ -149,8 +59,6 @@ Wire Wire Line
 	3100 2000 3100 1900
 Wire Wire Line
 	2700 1900 2700 1800
-Wire Wire Line
-	3800 1800 3900 1800
 Connection ~ 3800 1800
 Wire Wire Line
 	2700 1800 2850 1800
@@ -159,44 +67,6 @@ Wire Wire Line
 	2300 1800 2700 1800
 Wire Wire Line
 	2300 1900 2300 1800
-Text Label 2300 3100 0    10   ~ 0
-GND
-Wire Wire Line
-	2300 3100 2300 2950
-Text Label 2700 3100 0    10   ~ 0
-GND
-Wire Wire Line
-	2700 3100 2700 2950
-Text Label 3100 3100 0    10   ~ 0
-GND
-Wire Wire Line
-	3100 3100 3100 2950
-Text Label 3400 3100 0    10   ~ 0
-GND
-Wire Wire Line
-	3400 3100 3400 2950
-Text Label 3900 2900 0    10   ~ 0
-GND
-Wire Wire Line
-	3900 3000 3800 3000
-Connection ~ 3800 3000
-Wire Wire Line
-	3800 3000 3800 3100
-Wire Wire Line
-	3800 2600 3800 2900
-Wire Wire Line
-	3800 2900 3800 3000
-Connection ~ 3800 2900
-Wire Wire Line
-	3900 2900 3800 2900
-Wire Wire Line
-	3800 2200 3900 2200
-Wire Wire Line
-	3800 2300 3800 2200
-Wire Wire Line
-	3400 2100 3900 2100
-Wire Wire Line
-	3400 2200 3400 2100
 $Comp
 L power:+3.3V #PWR0112
 U 1 1 5FBE9448
@@ -232,12 +102,8 @@ Wire Wire Line
 	3100 2950 3100 2300
 Wire Wire Line
 	3100 2950 3250 2950
-Connection ~ 3400 2950
-Wire Wire Line
-	3400 2950 3400 2500
 Wire Wire Line
 	2700 2950 2400 2950
-Connection ~ 2300 2950
 Wire Wire Line
 	2300 2950 2300 2200
 Wire Wire Line
@@ -293,651 +159,167 @@ F 3 "~" H 3450 2950 50  0001 C CNN
 	1    3250 2950
 	1    0    0    -1  
 $EndComp
-Connection ~ 3250 2950
-Wire Wire Line
-	3250 2950 3400 2950
-Wire Wire Line
-	10350 3250 9650 3250
-Wire Wire Line
-	9150 3250 8450 3250
-Wire Wire Line
-	9650 3350 10350 3350
-Wire Wire Line
-	9650 3450 10350 3450
-Wire Wire Line
-	9650 3150 10350 3150
-Wire Wire Line
-	9650 3050 10350 3050
-Text GLabel 10350 3250 2    50   Input ~ 0
-SPI_1_MISO
-Text GLabel 10350 3450 2    50   Input ~ 0
-SPI_1_CE_1
-Text GLabel 10350 3350 2    50   Input ~ 0
-SPI_1_CE_0
-Text GLabel 10350 3150 2    50   Input ~ 0
-SPI_1_CLK
-Text GLabel 10350 3050 2    50   Input ~ 0
-SPI_1_MOSI
-Text GLabel 8450 3250 0    50   Input ~ 0
+Text GLabel 10200 3500 2    50   Input ~ 0
 SPI_0_MISO
-Text GLabel 8450 3450 0    50   Input ~ 0
+Text GLabel 8400 3600 0    50   Input ~ 0
 SPI_0_CE_1
-Text GLabel 8450 3350 0    50   Input ~ 0
+Text GLabel 8400 3500 0    50   Input ~ 0
 SPI_0_CE_0
-Text GLabel 8450 3150 0    50   Input ~ 0
+Text GLabel 10200 3600 2    50   Input ~ 0
 SPI_0_CLK
-Text GLabel 8450 3050 0    50   Input ~ 0
+Text GLabel 10200 3700 2    50   Input ~ 0
 SPI_0_MOSI
 Wire Wire Line
-	9150 3450 8450 3450
+	9100 3600 8400 3600
 Wire Wire Line
-	9150 3350 8450 3350
-Wire Wire Line
-	9150 3150 8450 3150
-Wire Wire Line
-	9150 3050 8450 3050
+	9100 3500 8400 3500
 Wire Wire Line
 	2850 1800 3800 1800
 Text HLabel 5450 1100 2    50   Input ~ 0
 SENSE_1_POWER
 Text HLabel 2300 1800 0    50   Input ~ 0
 SENSE_1_POWER
-Text HLabel 5700 1800 2    50   Input ~ 0
-SENSE_1_MOSI
-Text HLabel 5700 1900 2    50   Input ~ 0
-SENSE_1_SCLK
-Text HLabel 5700 2000 2    50   Input ~ 0
-SENSE_1_MISO_AG
-Text HLabel 5700 2100 2    50   Input ~ 0
-SENSE_1_CS_AG
-Text HLabel 5700 2200 2    50   Input ~ 0
-SENSE_1_MISO_M
-Text HLabel 5700 2300 2    50   Input ~ 0
-SENSE_1_CS_M
-Wire Wire Line
-	5100 1800 5700 1800
-Wire Wire Line
-	5700 1900 5100 1900
-Wire Wire Line
-	5100 2000 5700 2000
-Wire Wire Line
-	5700 2100 5100 2100
-Wire Wire Line
-	5100 2200 5700 2200
-Wire Wire Line
-	5700 2300 5100 2300
-Text HLabel 7800 2000 0    50   Input ~ 0
-SENSE_1_MOSI
-Text HLabel 7800 1700 0    50   Input ~ 0
-SENSE_1_SCLK
-Text HLabel 6100 4150 0    50   Input ~ 0
-SENSE_1_MISO_AG
-Text HLabel 7800 1400 0    50   Input ~ 0
-SENSE_1_CS_AG
-Text HLabel 7800 1150 0    50   Input ~ 0
-SENSE_1_CS_M
-Wire Wire Line
-	8400 2000 8050 2000
-Wire Wire Line
-	7800 1700 8100 1700
-Wire Wire Line
-	7800 1400 8050 1400
-Wire Wire Line
-	7800 1150 8050 1150
-Text GLabel 8400 1150 2    50   Input ~ 0
+Text GLabel 1700 7200 0    50   Input ~ 0
 SPI_0_CE_1
-Text GLabel 8400 1400 2    50   Input ~ 0
+Text GLabel 2450 4250 0    50   Input ~ 0
 SPI_0_CE_0
-Text GLabel 8400 1700 2    50   Input ~ 0
+Text GLabel 1700 7100 0    50   Input ~ 0
 SPI_0_CLK
-Text GLabel 8400 2000 2    50   Input ~ 0
+Text GLabel 1700 7000 0    50   Input ~ 0
 SPI_0_MOSI
-Text GLabel 8000 4050 2    50   Input ~ 0
-SPI_0_MISO
-Text GLabel 5700 3000 2    50   Input ~ 0
-SENSE_1_INT_M
-Text GLabel 5700 2900 2    50   Input ~ 0
-SENSE_1_DRDY_M
-Text GLabel 5700 2700 2    50   Input ~ 0
-SENSE_1_DATA_ENABLE_AG
-Text GLabel 5700 2600 2    50   Input ~ 0
-SENSE_1_INT_2_AG
-Text GLabel 5700 2500 2    50   Input ~ 0
-SENSE_1_INT_1_AG
+Text GLabel 5350 3750 2    50   Input ~ 0
+SENSE_1_INT_2
+Text GLabel 5350 3650 2    50   Input ~ 0
+SENSE_1_INT_1
 Wire Wire Line
-	5100 2500 5250 2500
+	4750 3650 4900 3650
 Wire Wire Line
-	5700 2600 5200 2600
+	5350 3750 4850 3750
 $Comp
 L Connector:TestPoint TP33
 U 1 1 5FD57E7D
-P 8050 1150
-F 0 "TP33" H 8108 1268 50  0000 L CNN
-F 1 "SENSE_1_CS_M1" H 8108 1177 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 8250 1150 50  0001 C CNN
-F 3 "~" H 8250 1150 50  0001 C CNN
-	1    8050 1150
+P 1800 7200
+F 0 "TP33" H 1858 7318 50  0000 L CNN
+F 1 "SENSE_1_CS_M1" H 1858 7227 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 2000 7200 50  0001 C CNN
+F 3 "~" H 2000 7200 50  0001 C CNN
+	1    1800 7200
 	1    0    0    -1  
 $EndComp
-Connection ~ 8050 1150
-Wire Wire Line
-	8050 1150 8400 1150
 $Comp
 L Connector:TestPoint TP34
 U 1 1 5FD5856B
-P 8050 1400
-F 0 "TP34" H 8108 1518 50  0000 L CNN
-F 1 "SENSE_1_CS_AG1" H 8108 1427 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 8250 1400 50  0001 C CNN
-F 3 "~" H 8250 1400 50  0001 C CNN
-	1    8050 1400
+P 2600 4250
+F 0 "TP34" H 2658 4368 50  0000 L CNN
+F 1 "SENSE_1_CS_AG1" H 2658 4277 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 2800 4250 50  0001 C CNN
+F 3 "~" H 2800 4250 50  0001 C CNN
+	1    2600 4250
 	1    0    0    -1  
 $EndComp
-Connection ~ 8050 1400
-Wire Wire Line
-	8050 1400 8400 1400
-Connection ~ 8100 1700
-Wire Wire Line
-	8100 1700 8400 1700
 $Comp
 L Connector:TestPoint TP35
 U 1 1 5FD59173
-P 8050 2000
-F 0 "TP35" H 8108 2118 50  0000 L CNN
-F 1 "SENSE_1_MOSI1" H 8108 2027 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 8250 2000 50  0001 C CNN
-F 3 "~" H 8250 2000 50  0001 C CNN
-	1    8050 2000
-	1    0    0    -1  
-$EndComp
-Connection ~ 8050 2000
-Wire Wire Line
-	8050 2000 7800 2000
-$Comp
-L Connector:TestPoint TP27
-U 1 1 5FD597AA
-P 5800 4050
-F 0 "TP27" H 5858 4168 50  0000 L CNN
-F 1 "SEN1MISO_M" H 5858 4077 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 6000 4050 50  0001 C CNN
-F 3 "~" H 6000 4050 50  0001 C CNN
-	1    5800 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP28
-U 1 1 5FD59E5D
-P 6550 4150
-F 0 "TP28" H 6608 4268 50  0000 L CNN
-F 1 "SEN1MISO_AG" H 6608 4177 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 6750 4150 50  0001 C CNN
-F 3 "~" H 6750 4150 50  0001 C CNN
-	1    6550 4150
+P 2350 7000
+F 0 "TP35" H 2408 7118 50  0000 L CNN
+F 1 "SENSE_1_MOSI1" H 2408 7027 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 2550 7000 50  0001 C CNN
+F 3 "~" H 2550 7000 50  0001 C CNN
+	1    2350 7000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:TestPoint TP24
 U 1 1 5FD5A5B7
-P 5250 2500
-F 0 "TP24" H 5308 2618 50  0000 L CNN
-F 1 "SENSE_1_INT_1_AG1" H 5308 2527 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 5450 2500 50  0001 C CNN
-F 3 "~" H 5450 2500 50  0001 C CNN
-	1    5250 2500
+P 4900 3650
+F 0 "TP24" H 4958 3768 50  0000 L CNN
+F 1 "SENSE_1_INT_1" H 4958 3677 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 5100 3650 50  0001 C CNN
+F 3 "~" H 5100 3650 50  0001 C CNN
+	1    4900 3650
 	1    0    0    -1  
 $EndComp
-Connection ~ 5250 2500
+Connection ~ 4900 3650
 Wire Wire Line
-	5250 2500 5700 2500
+	4900 3650 5350 3650
 $Comp
 L Connector:TestPoint TP23
 U 1 1 5FD5ADB8
-P 5200 2600
-F 0 "TP23" H 5258 2718 50  0000 L CNN
-F 1 "SENSE_1_INT_2_AG1" H 5258 2627 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 5400 2600 50  0001 C CNN
-F 3 "~" H 5400 2600 50  0001 C CNN
-	1    5200 2600
+P 4850 3750
+F 0 "TP23" H 4908 3868 50  0000 L CNN
+F 1 "SENSE_1_INT_2" H 4908 3777 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 5050 3750 50  0001 C CNN
+F 3 "~" H 5050 3750 50  0001 C CNN
+	1    4850 3750
 	1    0    0    -1  
 $EndComp
-Connection ~ 5200 2600
+Connection ~ 4850 3750
 Wire Wire Line
-	5200 2600 5100 2600
-Wire Wire Line
-	5100 2900 5700 2900
-Wire Wire Line
-	5100 3000 5700 3000
-Wire Wire Line
-	5100 2700 5700 2700
+	4850 3750 4750 3750
 Text Notes 850  5050 0    85   ~ 0
 LSM9DS1
-$Comp
-L RPi_Hat-eagle-import:GND #GND0101
-U 1 1 5FD66C09
-P 1950 7350
-F 0 "#GND0101" H 1950 7350 50  0001 C CNN
-F 1 "GND" H 1850 7250 59  0000 L BNN
-F 2 "" H 1950 7350 50  0001 C CNN
-F 3 "" H 1950 7350 50  0001 C CNN
-	1    1950 7350
-	1    0    0    -1  
-$EndComp
-$Comp
-L RPi_Hat-eagle-import:GND #GND0102
-U 1 1 5FD66C0F
-P 2350 7350
-F 0 "#GND0102" H 2350 7350 50  0001 C CNN
-F 1 "GND" H 2250 7250 59  0000 L BNN
-F 2 "" H 2350 7350 50  0001 C CNN
-F 3 "" H 2350 7350 50  0001 C CNN
-	1    2350 7350
-	1    0    0    -1  
-$EndComp
-$Comp
-L RPi_Hat-eagle-import:GND #GND0103
-U 1 1 5FD66C15
-P 2750 7350
-F 0 "#GND0103" H 2750 7350 50  0001 C CNN
-F 1 "GND" H 2650 7250 59  0000 L BNN
-F 2 "" H 2750 7350 50  0001 C CNN
-F 3 "" H 2750 7350 50  0001 C CNN
-	1    2750 7350
-	1    0    0    -1  
-$EndComp
-$Comp
-L RPi_Hat-eagle-import:GND #GND0104
-U 1 1 5FD66C1B
-P 3050 7350
-F 0 "#GND0104" H 3050 7350 50  0001 C CNN
-F 1 "GND" H 2950 7250 59  0000 L BNN
-F 2 "" H 3050 7350 50  0001 C CNN
-F 3 "" H 3050 7350 50  0001 C CNN
-	1    3050 7350
-	1    0    0    -1  
-$EndComp
-$Comp
-L RPi_Hat-eagle-import:GND #GND0105
-U 1 1 5FD66C21
-P 3450 7350
-F 0 "#GND0105" H 3450 7350 50  0001 C CNN
-F 1 "GND" H 3350 7250 59  0000 L BNN
-F 2 "" H 3450 7350 50  0001 C CNN
-F 3 "" H 3450 7350 50  0001 C CNN
-	1    3450 7350
-	1    0    0    -1  
-$EndComp
-$Comp
-L RPi_Hat-eagle-import:10NF_10000PF-50V-10%(0603) C9
-U 1 1 5FD66C2D
-P 3050 6550
-F 0 "C9" H 3110 6665 59  0000 L BNN
-F 1 "10nF" H 3110 6465 59  0000 L BNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3050 6550 50  0001 C CNN
-F 3 "" H 3050 6550 50  0001 C CNN
-	1    3050 6550
-	-1   0    0    -1  
-$EndComp
-$Comp
-L RPi_Hat-eagle-import:0.1UF-25V(+80_-20%)(0603) C10
-U 1 1 5FD66C33
-P 3450 6650
-F 0 "C10" H 3510 6765 59  0000 L BNN
-F 1 "0.1uF" H 3510 6565 59  0000 L BNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3450 6650 50  0001 C CNN
-F 3 "" H 3450 6650 50  0001 C CNN
-	1    3450 6650
-	-1   0    0    -1  
-$EndComp
-$Comp
-L RPi_Hat-eagle-import:0.1UF-25V(+80_-20%)(0603) C7
-U 1 1 5FD66C39
-P 2350 6250
-F 0 "C7" H 2410 6365 59  0000 L BNN
-F 1 "0.1uF" H 2410 6165 59  0000 L BNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2350 6250 50  0001 C CNN
-F 3 "" H 2350 6250 50  0001 C CNN
-	1    2350 6250
-	-1   0    0    -1  
-$EndComp
-$Comp
-L RPi_Hat-eagle-import:0.1UF-25V(+80_-20%)(0603) C8
-U 1 1 5FD66C3F
-P 2750 6350
-F 0 "C8" H 2810 6465 59  0000 L BNN
-F 1 "0.1uF" H 2810 6265 59  0000 L BNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2750 6350 50  0001 C CNN
-F 3 "" H 2750 6350 50  0001 C CNN
-	1    2750 6350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L RPi_Hat-eagle-import:LSM9DS1 U2
-U 1 1 5FD66C45
-P 4150 6550
-F 0 "U2" H 3650 7300 59  0000 L CNN
-F 1 "LSM9DS1" H 3650 5800 59  0000 L CNN
-F 2 "Package_LGA:LGA-24L_3x3.5mm_P0.43mm" H 4150 6550 50  0001 C CNN
-F 3 "" H 4150 6550 50  0001 C CNN
-	1    4150 6550
-	1    0    0    -1  
-$EndComp
-Text Label 1950 7250 0    10   ~ 0
-GND
+Text GLabel 4700 6700 2    50   Input ~ 0
+SENSE_2_INT_2
+Text GLabel 4700 6600 2    50   Input ~ 0
+SENSE_2_INT_1
 Wire Wire Line
-	1950 7250 1950 7100
-Text Label 2350 7250 0    10   ~ 0
-GND
+	4100 6600 4300 6600
 Wire Wire Line
-	2350 7250 2350 7100
-Text Label 2750 7250 0    10   ~ 0
-GND
-Wire Wire Line
-	2750 7250 2750 7100
-Text Label 3050 7250 0    10   ~ 0
-GND
-Wire Wire Line
-	3050 7250 3050 7100
-Text Label 3550 7050 0    10   ~ 0
-GND
-Wire Wire Line
-	3550 7150 3450 7150
-Connection ~ 3450 7150
-Wire Wire Line
-	3450 7150 3450 7250
-Wire Wire Line
-	3450 6750 3450 7050
-Wire Wire Line
-	3450 7050 3450 7150
-Connection ~ 3450 7050
-Wire Wire Line
-	3550 7050 3450 7050
-Wire Wire Line
-	3450 6350 3550 6350
-Wire Wire Line
-	3450 6450 3450 6350
-Wire Wire Line
-	3050 6250 3550 6250
-Wire Wire Line
-	3050 6350 3050 6250
-$Comp
-L power:GND #PWR0115
-U 1 1 5FD66C72
-P 2700 8500
-F 0 "#PWR0115" H 2700 8250 50  0001 C CNN
-F 1 "GND" H 2705 8327 50  0000 C CNN
-F 2 "" H 2700 8500 50  0001 C CNN
-F 3 "" H 2700 8500 50  0001 C CNN
-	1    2700 8500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2700 8500 2700 7100
-Connection ~ 2350 7100
-Wire Wire Line
-	2350 7100 2350 6350
-Wire Wire Line
-	2700 7100 2750 7100
-Connection ~ 2700 7100
-Connection ~ 2750 7100
-Wire Wire Line
-	2750 7100 2750 6450
-Wire Wire Line
-	2750 7100 2900 7100
-Connection ~ 3050 7100
-Wire Wire Line
-	3050 7100 3050 6650
-Wire Wire Line
-	2350 7100 2050 7100
-Connection ~ 1950 7100
-Wire Wire Line
-	1950 7100 1950 6350
-$Comp
-L Connector:TestPoint TP17
-U 1 1 5FD66C88
-P 2500 5950
-F 0 "TP17" H 2558 6068 50  0000 L CNN
-F 1 "SENSE_2_POWER" H 2558 5977 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 2700 5950 50  0001 C CNN
-F 3 "~" H 2700 5950 50  0001 C CNN
-	1    2500 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5FD66C97
-P 2050 7100
-F 0 "TP1" H 2108 7218 50  0000 L CNN
-F 1 "GND" H 2108 7127 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 2250 7100 50  0001 C CNN
-F 3 "~" H 2250 7100 50  0001 C CNN
-	1    2050 7100
-	1    0    0    -1  
-$EndComp
-Connection ~ 2050 7100
-Wire Wire Line
-	2050 7100 1950 7100
-$Comp
-L Connector:TestPoint TP5
-U 1 1 5FD66CA7
-P 2900 7100
-F 0 "TP5" H 2958 7218 50  0000 L CNN
-F 1 "GND" H 2958 7127 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 3100 7100 50  0001 C CNN
-F 3 "~" H 3100 7100 50  0001 C CNN
-	1    2900 7100
-	1    0    0    -1  
-$EndComp
-Connection ~ 2900 7100
-Wire Wire Line
-	2900 7100 3050 7100
-Text HLabel 1400 5950 0    50   Input ~ 0
-SENSE_2_POWER
-Text HLabel 5350 5950 2    50   Input ~ 0
-SENSE_2_MOSI
-Text HLabel 5350 6050 2    50   Input ~ 0
-SENSE_2_SCLK
-Text HLabel 5350 6150 2    50   Input ~ 0
-SENSE_2_MISO_AG
-Text HLabel 5350 6250 2    50   Input ~ 0
-SENSE_2_CS_AG
-Text HLabel 5350 6350 2    50   Input ~ 0
-SENSE_2_MISO_M
-Text HLabel 5350 6450 2    50   Input ~ 0
-SENSE_2_CS_M
-Wire Wire Line
-	4750 5950 5350 5950
-Wire Wire Line
-	5350 6050 4750 6050
-Wire Wire Line
-	4750 6150 5350 6150
-Wire Wire Line
-	5350 6250 4750 6250
-Wire Wire Line
-	4750 6350 5350 6350
-Wire Wire Line
-	5350 6450 4750 6450
-Text HLabel 7450 6150 0    50   Input ~ 0
-SENSE_2_MOSI
-Text HLabel 7450 5850 0    50   Input ~ 0
-SENSE_2_SCLK
-Text HLabel 7450 5550 0    50   Input ~ 0
-SENSE_2_CS_AG
-Text HLabel 7450 5300 0    50   Input ~ 0
-SENSE_2_CS_M
-Wire Wire Line
-	8050 6150 7700 6150
-Wire Wire Line
-	7450 5850 7750 5850
-Wire Wire Line
-	7450 5550 7700 5550
-Wire Wire Line
-	7450 5300 7700 5300
-Text GLabel 8050 5300 2    50   Input ~ 0
-SPI_1_CE_1
-Text GLabel 8050 5550 2    50   Input ~ 0
-SPI_1_CE_0
-Text GLabel 8050 5850 2    50   Input ~ 0
-SPI_1_CLK
-Text GLabel 8050 6150 2    50   Input ~ 0
-SPI_1_MOSI
-Text GLabel 8000 4250 2    50   Input ~ 0
-SPI_1_MISO
-Text GLabel 5350 7150 2    50   Input ~ 0
-SENSE_2_INT_M
-Text GLabel 5350 7050 2    50   Input ~ 0
-SENSE_2_DRDY_M
-Text GLabel 5350 6850 2    50   Input ~ 0
-SENSE_2_DATA_ENABLE_AG
-Text GLabel 5350 6750 2    50   Input ~ 0
-SENSE_2_INT_2_AG
-Text GLabel 5350 6650 2    50   Input ~ 0
-SENSE_2_INT_1_AG
-Wire Wire Line
-	4750 6650 4950 6650
-Wire Wire Line
-	5350 6750 4800 6750
-$Comp
-L Connector:TestPoint TP29
-U 1 1 5FD66CED
-P 7700 5300
-F 0 "TP29" H 7758 5418 50  0000 L CNN
-F 1 "SENSE_2_CS_M1" H 7758 5327 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 7900 5300 50  0001 C CNN
-F 3 "~" H 7900 5300 50  0001 C CNN
-	1    7700 5300
-	1    0    0    -1  
-$EndComp
-Connection ~ 7700 5300
-Wire Wire Line
-	7700 5300 8050 5300
-$Comp
-L Connector:TestPoint TP30
-U 1 1 5FD66CF5
-P 7700 5550
-F 0 "TP30" H 7758 5668 50  0000 L CNN
-F 1 "SENSE_2_CS_AG1" H 7758 5577 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 7900 5550 50  0001 C CNN
-F 3 "~" H 7900 5550 50  0001 C CNN
-	1    7700 5550
-	1    0    0    -1  
-$EndComp
-Connection ~ 7700 5550
-Wire Wire Line
-	7700 5550 8050 5550
-$Comp
-L Connector:TestPoint TP32
-U 1 1 5FD66CFD
-P 7750 5850
-F 0 "TP32" H 7808 5968 50  0000 L CNN
-F 1 "SENSE_2_SCLK1" H 7808 5877 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 7950 5850 50  0001 C CNN
-F 3 "~" H 7950 5850 50  0001 C CNN
-	1    7750 5850
-	1    0    0    -1  
-$EndComp
-Connection ~ 7750 5850
-Wire Wire Line
-	7750 5850 8050 5850
-$Comp
-L Connector:TestPoint TP31
-U 1 1 5FD66D05
-P 7700 6150
-F 0 "TP31" H 7758 6268 50  0000 L CNN
-F 1 "SENSE_2_MOSI1" H 7758 6177 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 7900 6150 50  0001 C CNN
-F 3 "~" H 7900 6150 50  0001 C CNN
-	1    7700 6150
-	1    0    0    -1  
-$EndComp
-Connection ~ 7700 6150
-Wire Wire Line
-	7700 6150 7450 6150
+	4700 6700 4150 6700
 $Comp
 L Connector:TestPoint TP22
 U 1 1 5FD66D1D
-P 4950 6650
-F 0 "TP22" H 5008 6768 50  0000 L CNN
-F 1 "SENSE_2_INT_1_AG1" H 5008 6677 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 5150 6650 50  0001 C CNN
-F 3 "~" H 5150 6650 50  0001 C CNN
-	1    4950 6650
+P 4300 6600
+F 0 "TP22" H 4358 6718 50  0000 L CNN
+F 1 "SENSE_2_INT_1" H 4358 6627 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 4500 6600 50  0001 C CNN
+F 3 "~" H 4500 6600 50  0001 C CNN
+	1    4300 6600
 	1    0    0    -1  
 $EndComp
-Connection ~ 4950 6650
+Connection ~ 4300 6600
 Wire Wire Line
-	4950 6650 5350 6650
+	4300 6600 4700 6600
 $Comp
 L Connector:TestPoint TP21
 U 1 1 5FD66D25
-P 4800 6750
-F 0 "TP21" H 4858 6868 50  0000 L CNN
-F 1 "SENSE_2_INT_2_AG1" H 4858 6777 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 5000 6750 50  0001 C CNN
-F 3 "~" H 5000 6750 50  0001 C CNN
-	1    4800 6750
+P 4150 6700
+F 0 "TP21" H 4208 6818 50  0000 L CNN
+F 1 "SENSE_2_INT_2" H 4208 6727 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 4350 6700 50  0001 C CNN
+F 3 "~" H 4350 6700 50  0001 C CNN
+	1    4150 6700
 	1    0    0    -1  
 $EndComp
-Connection ~ 4800 6750
+Connection ~ 4150 6700
 Wire Wire Line
-	4800 6750 4750 6750
-Wire Wire Line
-	4750 7050 5350 7050
-Wire Wire Line
-	4750 7150 5350 7150
-Wire Wire Line
-	4750 6850 5350 6850
+	4150 6700 4100 6700
 Wire Wire Line
 	2050 1100 2350 1100
-Wire Wire Line
-	2350 7100 2700 7100
 Wire Wire Line
 	2700 2950 3050 2950
 $Comp
 L power:GND #PWR0117
 U 1 1 5FD9E41A
-P 8950 3550
-F 0 "#PWR0117" H 8950 3300 50  0001 C CNN
-F 1 "GND" H 8955 3377 50  0000 C CNN
-F 2 "" H 8950 3550 50  0001 C CNN
-F 3 "" H 8950 3550 50  0001 C CNN
-	1    8950 3550
+P 8900 3700
+F 0 "#PWR0117" H 8900 3450 50  0001 C CNN
+F 1 "GND" H 8905 3527 50  0000 C CNN
+F 2 "" H 8900 3700 50  0001 C CNN
+F 3 "" H 8900 3700 50  0001 C CNN
+	1    8900 3700
 	-1   0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0119
-U 1 1 5FD9FC3E
-P 9950 3550
-F 0 "#PWR0119" H 9950 3300 50  0001 C CNN
-F 1 "GND" H 9955 3377 50  0000 C CNN
-F 2 "" H 9950 3550 50  0001 C CNN
-F 3 "" H 9950 3550 50  0001 C CNN
-	1    9950 3550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	9650 3550 9950 3550
-Wire Wire Line
-	9150 3550 8950 3550
+	9100 3700 8900 3700
 $Comp
 L Connector:TestPoint TP36
 U 1 1 5FD58B5E
-P 8100 1700
-F 0 "TP36" H 8158 1818 50  0000 L CNN
-F 1 "SENSE_1_SCLK1" H 8158 1727 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 8300 1700 50  0001 C CNN
-F 3 "~" H 8300 1700 50  0001 C CNN
-	1    8100 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x06_Odd_Even J8
-U 1 1 5FC325DB
-P 9350 3250
-F 0 "J8" H 9400 3667 50  0000 C CNN
-F 1 "SPI" H 9400 3576 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x06_P2.00mm_Vertical_SMD" H 9350 3250 50  0001 C CNN
-F 3 "~" H 9350 3250 50  0001 C CNN
-	1    9350 3250
+P 2900 4150
+F 0 "TP36" H 2958 4268 50  0000 L CNN
+F 1 "SENSE_1_SCLK1" H 2958 4177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 3100 4150 50  0001 C CNN
+F 3 "~" H 3100 4150 50  0001 C CNN
+	1    2900 4150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -962,7 +344,7 @@ U 1 1 5FC7B661
 P 3950 1100
 F 0 "J2" H 4000 1317 50  0000 C CNN
 F 1 "SEN_POW_EN" H 4000 1226 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x02_P2.00mm_Vertical_SMD" H 3950 1100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical_SMD" H 3950 1100 50  0001 C CNN
 F 3 "~" H 3950 1100 50  0001 C CNN
 	1    3950 1100
 	1    0    0    -1  
@@ -978,119 +360,289 @@ Wire Wire Line
 	4250 1100 5450 1100
 Wire Wire Line
 	4250 1200 5450 1200
-Text HLabel 5700 4050 0    50   Input ~ 0
-SENSE_1_MISO_M
+$Comp
+L Sensor_Motion:LSM6DS3 U2
+U 1 1 5FE3E0B1
+P 4150 3950
+F 0 "U2" H 4794 3996 50  0000 L CNN
+F 1 "LSM6DS3" H 4794 3905 50  0000 L CNN
+F 2 "Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y" H 3750 3250 50  0001 L CNN
+F 3 "www.st.com/resource/en/datasheet/lsm6ds3.pdf" H 4250 3300 50  0001 C CNN
+	1    4150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5FE68428
+P 3400 3850
+F 0 "#PWR0115" H 3400 3600 50  0001 C CNN
+F 1 "GND" H 3405 3677 50  0000 C CNN
+F 2 "" H 3400 3850 50  0001 C CNN
+F 3 "" H 3400 3850 50  0001 C CNN
+	1    3400 3850
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	5800 4050 5700 4050
-Connection ~ 5800 4050
+	3400 3850 3500 3850
 Wire Wire Line
-	6100 4150 6550 4150
+	3550 3750 3500 3750
 Wire Wire Line
-	6550 4150 7200 4150
-Connection ~ 6550 4150
+	3500 3750 3500 3850
+Connection ~ 3500 3850
 Wire Wire Line
-	5800 4050 7200 4050
-Text HLabel 6100 4350 0    50   Input ~ 0
-SENSE_2_MISO_AG
+	3500 3850 3550 3850
+Wire Wire Line
+	3400 3650 3550 3650
+Wire Wire Line
+	4150 3350 4150 1900
+Wire Wire Line
+	3800 1900 4150 1900
+Wire Wire Line
+	4250 3350 4250 1800
+Wire Wire Line
+	3800 1800 4250 1800
+Text GLabel 1700 6600 0    50   Input ~ 0
+SPI_0_MISO
 $Comp
 L Connector:TestPoint TP25
-U 1 1 5FCE5D42
-P 5800 4250
-F 0 "TP25" H 5858 4368 50  0000 L CNN
-F 1 "SEN2MISO_M" H 5858 4277 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 6000 4250 50  0001 C CNN
-F 3 "~" H 6000 4250 50  0001 C CNN
-	1    5800 4250
+U 1 1 5FEB5568
+P 2800 3650
+F 0 "TP25" H 2858 3768 50  0000 L CNN
+F 1 "SEN1MISO_M" H 2858 3677 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 3000 3650 50  0001 C CNN
+F 3 "~" H 3000 3650 50  0001 C CNN
+	1    2800 3650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP26
-U 1 1 5FCE5D48
-P 6550 4350
-F 0 "TP26" H 6608 4468 50  0000 L CNN
-F 1 "SEN2MISO_AG" H 6608 4377 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 6750 4350 50  0001 C CNN
-F 3 "~" H 6750 4350 50  0001 C CNN
-	1    6550 4350
+L power:GND #PWR0119
+U 1 1 5FEC1A14
+P 4150 4750
+F 0 "#PWR0119" H 4150 4500 50  0001 C CNN
+F 1 "GND" H 4155 4577 50  0000 C CNN
+F 2 "" H 4150 4750 50  0001 C CNN
+F 3 "" H 4150 4750 50  0001 C CNN
+	1    4150 4750
 	1    0    0    -1  
 $EndComp
-Text HLabel 5700 4250 0    50   Input ~ 0
-SENSE_2_MISO_M
 Wire Wire Line
-	5800 4250 5700 4250
-Connection ~ 5800 4250
+	4250 4550 4250 4650
 Wire Wire Line
-	6100 4350 6550 4350
+	4250 4650 4150 4650
 Wire Wire Line
-	6550 4350 7200 4350
-Connection ~ 6550 4350
+	4150 4650 4150 4550
 Wire Wire Line
-	5800 4250 7200 4250
-Wire Wire Line
-	7700 4050 7850 4050
-Wire Wire Line
-	8000 4250 7850 4250
-Wire Wire Line
-	7700 4350 7850 4350
-Wire Wire Line
-	7850 4350 7850 4250
-Connection ~ 7850 4250
-Wire Wire Line
-	7850 4250 7700 4250
-Wire Wire Line
-	7700 4150 7850 4150
-Wire Wire Line
-	7850 4150 7850 4050
-Connection ~ 7850 4050
-Wire Wire Line
-	7850 4050 8000 4050
+	4150 4750 4150 4650
+Connection ~ 4150 4650
 $Comp
-L Connector_Generic:Conn_02x04_Odd_Even J3
-U 1 1 5FCA1124
-P 7400 4150
-F 0 "J3" H 7450 4467 50  0000 C CNN
-F 1 "SPI_MISO_EN" H 7450 4376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x04_P2.00mm_Vertical_SMD" H 7400 4150 50  0001 C CNN
-F 3 "~" H 7400 4150 50  0001 C CNN
-	1    7400 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L RPi_Hat-eagle-import:10UF-6.3V-20%(0603) C6
-U 1 1 5FD66C27
-P 1950 6250
-F 0 "C6" H 2010 6365 59  0000 L BNN
-F 1 "10uF" H 2010 6165 59  0000 L BNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1950 6250 50  0001 C CNN
-F 3 "" H 1950 6250 50  0001 C CNN
-	1    1950 6250
+L RPi_Hat-eagle-import:10UF-6.3V-20%(0603) C1
+U 1 1 5FF0906F
+P 1650 5050
+F 0 "C1" H 1710 5165 59  0000 L BNN
+F 1 "10uF" H 1710 4965 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1650 5050 50  0001 C CNN
+F 3 "" H 1650 5050 50  0001 C CNN
+	1    1650 5050
 	-1   0    0    -1  
 $EndComp
+$Comp
+L RPi_Hat-eagle-import:0.1UF-25V(+80_-20%)(0603) C5
+U 1 1 5FF09075
+P 2050 5050
+F 0 "C5" H 2110 5165 59  0000 L BNN
+F 1 "0.1uF" H 2110 4965 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2050 5050 50  0001 C CNN
+F 3 "" H 2050 5050 50  0001 C CNN
+	1    2050 5050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L RPi_Hat-eagle-import:0.1UF-25V(+80_-20%)(0603) C6
+U 1 1 5FF0907B
+P 2450 5150
+F 0 "C6" H 2510 5265 59  0000 L BNN
+F 1 "0.1uF" H 2510 5065 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2450 5150 50  0001 C CNN
+F 3 "" H 2450 5150 50  0001 C CNN
+	1    2450 5150
+	-1   0    0    -1  
+$EndComp
+Text Label 1650 4850 0    10   ~ 0
+VDD
 Wire Wire Line
-	3550 6050 3450 6050
+	3150 4850 3150 4750
+Connection ~ 3150 4850
 Wire Wire Line
-	3450 6050 3450 5950
+	2450 4850 3150 4850
 Wire Wire Line
-	3450 5950 3550 5950
+	2450 4950 2450 4850
 Wire Wire Line
-	3450 5950 2750 5950
-Connection ~ 3450 5950
+	2050 4850 2050 4750
+Connection ~ 3150 4750
 Wire Wire Line
-	2500 5950 2350 5950
-Connection ~ 2500 5950
+	2050 4750 2200 4750
+Connection ~ 2050 4750
 Wire Wire Line
-	1950 6050 1950 5950
-Connection ~ 1950 5950
+	1650 4750 2050 4750
 Wire Wire Line
-	1950 5950 1400 5950
+	1650 4850 1650 4750
+$Comp
+L power:GND #PWR0141
+U 1 1 5FF0908C
+P 2400 7300
+F 0 "#PWR0141" H 2400 7050 50  0001 C CNN
+F 1 "GND" H 2405 7127 50  0000 C CNN
+F 2 "" H 2400 7300 50  0001 C CNN
+F 3 "" H 2400 7300 50  0001 C CNN
+	1    2400 7300
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	2350 6050 2350 5950
-Connection ~ 2350 5950
+	2400 7300 2400 5900
+Connection ~ 2050 5900
 Wire Wire Line
-	2350 5950 1950 5950
+	2050 5900 2050 5150
 Wire Wire Line
-	2750 6150 2750 5950
-Connection ~ 2750 5950
+	2400 5900 2450 5900
+Connection ~ 2400 5900
+Connection ~ 2450 5900
 Wire Wire Line
-	2750 5950 2500 5950
+	2450 5900 2450 5250
+Wire Wire Line
+	2450 5900 2600 5900
+Wire Wire Line
+	1650 5900 1650 5150
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5FF0909C
+P 2200 4750
+F 0 "TP5" H 2258 4868 50  0000 L CNN
+F 1 "SENSE_1_POWER" H 2258 4777 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 2400 4750 50  0001 C CNN
+F 3 "~" H 2400 4750 50  0001 C CNN
+	1    2200 4750
+	1    0    0    -1  
+$EndComp
+Connection ~ 2200 4750
+Wire Wire Line
+	2200 4750 3150 4750
+Text HLabel 1650 4750 0    50   Input ~ 0
+SENSE_1_POWER
+Wire Wire Line
+	2050 5900 2400 5900
+$Comp
+L Sensor_Motion:LSM6DS3 U1
+U 1 1 5FF090B7
+P 3500 6900
+F 0 "U1" H 4144 6946 50  0000 L CNN
+F 1 "LSM6DS3" H 4144 6855 50  0000 L CNN
+F 2 "Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y" H 3100 6200 50  0001 L CNN
+F 3 "www.st.com/resource/en/datasheet/lsm6ds3.pdf" H 3600 6250 50  0001 C CNN
+	1    3500 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0142
+U 1 1 5FF090BD
+P 2750 6800
+F 0 "#PWR0142" H 2750 6550 50  0001 C CNN
+F 1 "GND" H 2755 6627 50  0000 C CNN
+F 2 "" H 2750 6800 50  0001 C CNN
+F 3 "" H 2750 6800 50  0001 C CNN
+	1    2750 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 6800 2850 6800
+Wire Wire Line
+	2900 6700 2850 6700
+Wire Wire Line
+	2850 6700 2850 6800
+Connection ~ 2850 6800
+Wire Wire Line
+	2850 6800 2900 6800
+Wire Wire Line
+	3500 6300 3500 4850
+Wire Wire Line
+	3150 4850 3500 4850
+Wire Wire Line
+	3600 6300 3600 4750
+Wire Wire Line
+	3150 4750 3600 4750
+$Comp
+L power:GND #PWR0143
+U 1 1 5FF090D0
+P 3500 7700
+F 0 "#PWR0143" H 3500 7450 50  0001 C CNN
+F 1 "GND" H 3505 7527 50  0000 C CNN
+F 2 "" H 3500 7700 50  0001 C CNN
+F 3 "" H 3500 7700 50  0001 C CNN
+	1    3500 7700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 7500 3600 7600
+Wire Wire Line
+	3600 7600 3500 7600
+Wire Wire Line
+	3500 7600 3500 7500
+Wire Wire Line
+	3500 7700 3500 7600
+Connection ~ 3500 7600
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J3
+U 1 1 5FF4F2C7
+P 9300 3600
+F 0 "J3" H 9350 3917 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 9350 3826 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical_SMD" H 9300 3600 50  0001 C CNN
+F 3 "~" H 9300 3600 50  0001 C CNN
+	1    9300 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 3500 10200 3500
+Wire Wire Line
+	9600 3600 10200 3600
+Wire Wire Line
+	9600 3700 10200 3700
+Text GLabel 2450 4150 0    50   Input ~ 0
+SPI_0_CLK
+Text GLabel 2450 3650 0    50   Input ~ 0
+SPI_0_MISO
+Wire Wire Line
+	2450 3650 2800 3650
+Wire Wire Line
+	3350 3650 2800 3650
+Connection ~ 2800 3650
+Text GLabel 2450 4050 0    50   Input ~ 0
+SPI_0_MOSI
+Wire Wire Line
+	2450 4050 3550 4050
+Wire Wire Line
+	2450 4150 2900 4150
+Wire Wire Line
+	2900 4150 3550 4150
+Connection ~ 2900 4150
+Wire Wire Line
+	2600 4250 3550 4250
+Wire Wire Line
+	2600 4250 2450 4250
+Connection ~ 2600 4250
+Wire Wire Line
+	1700 7100 2900 7100
+Wire Wire Line
+	1800 7200 2900 7200
+Wire Wire Line
+	1800 7200 1700 7200
+Connection ~ 1800 7200
+Wire Wire Line
+	1700 7000 2350 7000
+Wire Wire Line
+	2350 7000 2900 7000
+Connection ~ 2350 7000
+Wire Wire Line
+	1700 6600 2900 6600
+Wire Wire Line
+	1650 5900 2050 5900
 $EndSCHEMATC
