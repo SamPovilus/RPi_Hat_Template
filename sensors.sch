@@ -392,8 +392,6 @@ Connection ~ 3500 3850
 Wire Wire Line
 	3500 3850 3550 3850
 Wire Wire Line
-	3400 3650 3550 3650
-Wire Wire Line
 	4150 3350 4150 1900
 Wire Wire Line
 	3800 1900 4150 1900
@@ -612,9 +610,6 @@ Text GLabel 2450 3650 0    50   Input ~ 0
 SPI_0_MISO
 Wire Wire Line
 	2450 3650 2800 3650
-Wire Wire Line
-	3350 3650 2800 3650
-Connection ~ 2800 3650
 Text GLabel 2450 4050 0    50   Input ~ 0
 SPI_0_MOSI
 Wire Wire Line
@@ -645,4 +640,7 @@ Wire Wire Line
 	1700 6600 2900 6600
 Wire Wire Line
 	1650 5900 2050 5900
+Wire Wire Line
+	3550 3650 2800 3650
+Connection ~ 2800 3650
 $EndSCHEMATC
