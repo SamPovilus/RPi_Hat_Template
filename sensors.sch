@@ -366,7 +366,7 @@ U 1 1 5FE3E0B1
 P 4150 3950
 F 0 "U2" H 4794 3996 50  0000 L CNN
 F 1 "LSM6DS3" H 4794 3905 50  0000 L CNN
-F 2 "Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y" H 3750 3250 50  0001 L CNN
+F 2 "RPi_Hat_Template:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y_for_6mil_board" H 3750 3250 50  0001 L CNN
 F 3 "www.st.com/resource/en/datasheet/lsm6ds3.pdf" H 4250 3300 50  0001 C CNN
 	1    4150 3950
 	1    0    0    -1  
@@ -536,7 +536,7 @@ U 1 1 5FF090B7
 P 3500 6900
 F 0 "U1" H 4144 6946 50  0000 L CNN
 F 1 "LSM6DS3" H 4144 6855 50  0000 L CNN
-F 2 "Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y" H 3100 6200 50  0001 L CNN
+F 2 "RPi_Hat_Template:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y_for_6mil_board" H 3100 6200 50  0001 L CNN
 F 3 "www.st.com/resource/en/datasheet/lsm6ds3.pdf" H 3600 6250 50  0001 C CNN
 	1    3500 6900
 	1    0    0    -1  
