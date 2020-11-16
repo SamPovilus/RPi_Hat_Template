@@ -3475,7 +3475,7 @@
     )
   )
 
-  (gr_text "Ball Ballancing Robot Pi Hat \nCopyright Sam Povilus 2020\n2020-11-16 V0.4.0" (at 44.45 26.924) (layer F.SilkS)
+  (gr_text "Ball Ballancing Robot Pi Hat \nCopyright Sam Povilus 2020\n2020-11-16 V0.4.2" (at 44.45 26.924) (layer F.SilkS)
     (effects (font (size 1 0.7) (thickness 0.1)))
   )
   (gr_text "Select one of these board edges depending \nupon the type of socket that is used." (at 82.5 0.5) (layer Cmts.User)
@@ -4388,7 +4388,7 @@
   (segment (start 15.0876 33.02) (end 15.1892 32.9184) (width 0.1524) (layer F.Cu) (net 61))
   (segment (start 10.795 33.02) (end 15.0876 33.02) (width 0.1524) (layer F.Cu) (net 61))
 
-  (zone (net 4) (net_name GND) (layer F.Cu) (tstamp 5FB2C110) (hatch edge 0.508)
+  (zone (net 4) (net_name GND) (layer F.Cu) (tstamp 5FB2C13C) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -5497,7 +5497,7 @@
       )
     )
   )
-  (zone (net 4) (net_name GND) (layer B.Cu) (tstamp 5FB2C10D) (hatch edge 0.508)
+  (zone (net 4) (net_name GND) (layer B.Cu) (tstamp 5FB2C139) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508) (smoothing chamfer))
