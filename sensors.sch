@@ -465,25 +465,6 @@ F 3 "" H 2450 5150 50  0001 C CNN
 	1    2450 5150
 	-1   0    0    -1  
 $EndComp
-Text Label 1650 4850 0    10   ~ 0
-VDD
-Wire Wire Line
-	3150 4850 3150 4750
-Connection ~ 3150 4850
-Wire Wire Line
-	2450 4850 3150 4850
-Wire Wire Line
-	2450 4950 2450 4850
-Wire Wire Line
-	2050 4850 2050 4750
-Connection ~ 3150 4750
-Wire Wire Line
-	2050 4750 2200 4750
-Connection ~ 2050 4750
-Wire Wire Line
-	1650 4750 2050 4750
-Wire Wire Line
-	1650 4850 1650 4750
 $Comp
 L power:GND #PWR0141
 U 1 1 5FF0908C
@@ -515,17 +496,14 @@ L Connector:TestPoint TP5
 U 1 1 5FF0909C
 P 2200 4750
 F 0 "TP5" H 2258 4868 50  0000 L CNN
-F 1 "SENSE_1_POWER" H 2258 4777 50  0000 L CNN
+F 1 "SENSE_2_POWER" H 2258 4777 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 2400 4750 50  0001 C CNN
 F 3 "~" H 2400 4750 50  0001 C CNN
 	1    2200 4750
 	1    0    0    -1  
 $EndComp
-Connection ~ 2200 4750
-Wire Wire Line
-	2200 4750 3150 4750
-Text HLabel 1650 4750 0    50   Input ~ 0
-SENSE_1_POWER
+Text HLabel 1400 4700 0    50   Input ~ 0
+SENSE_2_POWER
 Wire Wire Line
 	2050 5900 2400 5900
 $Comp
@@ -559,14 +537,6 @@ Wire Wire Line
 Connection ~ 2850 6800
 Wire Wire Line
 	2850 6800 2900 6800
-Wire Wire Line
-	3500 6300 3500 4850
-Wire Wire Line
-	3150 4850 3500 4850
-Wire Wire Line
-	3600 6300 3600 4750
-Wire Wire Line
-	3150 4750 3600 4750
 $Comp
 L power:GND #PWR0143
 U 1 1 5FF090D0
@@ -643,4 +613,37 @@ Wire Wire Line
 Wire Wire Line
 	3550 3650 2800 3650
 Connection ~ 2800 3650
+Wire Wire Line
+	1400 4700 1650 4700
+Wire Wire Line
+	2450 4950 2400 4950
+Wire Wire Line
+	2400 4950 2400 4850
+Wire Wire Line
+	2400 4750 2200 4750
+Wire Wire Line
+	3600 4950 3600 5800
+Wire Wire Line
+	3500 6300 3500 5800
+Wire Wire Line
+	3500 5800 3600 5800
+Connection ~ 3600 5800
+Wire Wire Line
+	3600 5800 3600 6300
+Wire Wire Line
+	2450 4950 3600 4950
+Connection ~ 2450 4950
+Wire Wire Line
+	2050 4850 2400 4850
+Connection ~ 2400 4850
+Wire Wire Line
+	2400 4850 2400 4750
+Wire Wire Line
+	2200 4750 1650 4750
+Wire Wire Line
+	1650 4750 1650 4700
+Connection ~ 2200 4750
+Wire Wire Line
+	1650 4750 1650 4850
+Connection ~ 1650 4750
 $EndSCHEMATC
