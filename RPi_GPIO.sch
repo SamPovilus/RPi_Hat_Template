@@ -216,10 +216,6 @@ Text GLabel 4650 3500 2    50   Input ~ 0
 MOTOR_4_DIRECTION
 Text GLabel 4650 3100 2    50   Input ~ 0
 SENSE_2_INT_1
-Text GLabel 4650 4000 2    50   Input ~ 0
-MOTOR_2_EN
-Text GLabel 4650 3700 2    50   Input ~ 0
-MOTOR_3_EN
 Wire Wire Line
 	4450 3000 4650 3000
 Wire Wire Line
@@ -229,27 +225,19 @@ Wire Wire Line
 Wire Wire Line
 	4450 3500 4650 3500
 Wire Wire Line
-	4450 3700 4650 3700
-Wire Wire Line
-	4450 4000 4650 4000
-Wire Wire Line
 	2350 4300 2550 4300
 Wire Wire Line
 	2350 4200 2550 4200
 Wire Wire Line
 	2350 4100 2550 4100
 Wire Wire Line
-	2350 4000 2550 4000
-Wire Wire Line
 	2350 3400 2550 3400
 Wire Wire Line
 	2350 3300 2550 3300
 Wire Wire Line
 	2350 3000 2550 3000
-Text GLabel 2350 4000 0    50   Input ~ 0
-MOTOR_4_EN
 Text GLabel 2350 3400 0    50   Input ~ 0
-MOTOR_1_EN
+MOTOR_EN
 Text GLabel 2350 4100 0    50   Input ~ 0
 MOTOR_3_DIRECTION
 Text GLabel 2350 4300 0    50   Input ~ 0

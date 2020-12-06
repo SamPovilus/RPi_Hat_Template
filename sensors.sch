@@ -357,9 +357,7 @@ Connection ~ 3600 1100
 Wire Wire Line
 	3600 1100 2900 1100
 Wire Wire Line
-	4250 1100 5450 1100
-Wire Wire Line
-	4250 1200 5450 1200
+	4250 1200 5100 1200
 $Comp
 L Sensor_Motion:LSM6DS3 U2
 U 1 1 5FE3E0B1
@@ -646,4 +644,89 @@ Connection ~ 2200 4750
 Wire Wire Line
 	1650 4750 1650 4850
 Connection ~ 1650 4750
+$Comp
+L led_sam:LED_Dual_CCAA D?
+U 1 1 5FE88287
+P 7850 1750
+AR Path="/5FB8D37C/5FE88287" Ref="D?"  Part="1" 
+AR Path="/5FB06CD3/5FE88287" Ref="D1"  Part="1" 
+F 0 "D1" V 7804 1540 50  0000 R CNN
+F 1 "LED_Dual_CCAA" V 7895 1540 50  0000 R CNN
+F 2 "SAM_LED:LED_WURTH_ELECTRONIC_DUAL" H 7880 1750 50  0001 C CNN
+F 3 "~" H 7880 1750 50  0001 C CNN
+	1    7850 1750
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5FE88290
+P 7950 950
+AR Path="/5FB8D37C/5FE88290" Ref="R?"  Part="1" 
+AR Path="/5FB06CD3/5FE88290" Ref="R7"  Part="1" 
+F 0 "R7" V 7745 950 50  0000 C CNN
+F 1 "56" V 7836 950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7950 950 50  0001 C CNN
+F 3 "~" H 7950 950 50  0001 C CNN
+	1    7950 950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5FE88296
+P 7750 1250
+AR Path="/5FB8D37C/5FE88296" Ref="R?"  Part="1" 
+AR Path="/5FB06CD3/5FE88296" Ref="R4"  Part="1" 
+F 0 "R4" V 7545 1250 50  0000 C CNN
+F 1 "56" V 7636 1250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7750 1250 50  0001 C CNN
+F 3 "~" H 7750 1250 50  0001 C CNN
+	1    7750 1250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7950 850  7950 650 
+Wire Wire Line
+	7950 1050 7950 1450
+Wire Wire Line
+	7750 1350 7750 1450
+$Comp
+L power:GND #PWR0130
+U 1 1 5FE8BE41
+P 7850 2350
+F 0 "#PWR0130" H 7850 2100 50  0001 C CNN
+F 1 "GND" H 7855 2177 50  0000 C CNN
+F 2 "" H 7850 2350 50  0001 C CNN
+F 3 "" H 7850 2350 50  0001 C CNN
+	1    7850 2350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2350 7850 2350
+Wire Wire Line
+	7750 2050 7750 2350
+Wire Wire Line
+	7950 2050 7950 2350
+Wire Wire Line
+	7950 2350 7850 2350
+Connection ~ 7850 2350
+Wire Wire Line
+	5100 1100 5100 650 
+Wire Wire Line
+	5100 650  7950 650 
+Wire Wire Line
+	4250 1100 5100 1100
+Connection ~ 5100 1100
+Wire Wire Line
+	5100 1100 5450 1100
+Wire Wire Line
+	7750 1150 7050 1150
+Wire Wire Line
+	7050 1150 7050 1950
+Wire Wire Line
+	7050 1950 5100 1950
+Wire Wire Line
+	5100 1950 5100 1200
+Connection ~ 5100 1200
+Wire Wire Line
+	5100 1200 5450 1200
 $EndSCHEMATC
