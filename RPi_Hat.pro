@@ -1,4 +1,4 @@
-update=Sun 06 Dec 2020 07:11:44 AM MST
+update=Sun 06 Dec 2020 07:15:15 AM MST
 version=1
 last_client=kicad
 [cvpcb]
@@ -247,8 +247,8 @@ dPairViaGap=0.25
 Name=power
 Clearance=0.2032
 TrackWidth=0.4572
-ViaDiameter=0.6
-ViaDrill=0.3
+ViaDiameter=1
+ViaDrill=0.6
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2
