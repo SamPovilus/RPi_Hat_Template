@@ -24,6 +24,8 @@ inductor on sensor power?
 
 test point labels
 
+side single row connectors to not offset
+
 on eric's notes I started going to a golbal enable, but I didn't remove the signals from the pi headder or renams
 
 ## Erick's notse
