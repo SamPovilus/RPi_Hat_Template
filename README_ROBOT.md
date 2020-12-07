@@ -10,7 +10,7 @@ samtec esq or esw look reasonalbe but maybe not surface mount
 
 # fix rev 1.x
 
-extend lga pads outside chip
+extend lga pads outside chip (/)
 
 move chip select 0 to left side of board (near chip 0) (/)
 
@@ -26,7 +26,9 @@ test point labels
 
 side single row connectors to not offset
 
-on eric's notes I started going to a golbal enable, but I didn't remove the signals from the pi headder or renams
+edge connectors are too big
+
+on eric's notes I started going to a golbal enable, but I didn't remove the signals from the pi headder or renams (/)
 
 ## Erick's notse
 * Could use a common ENABLE for all motors, but might need a bigger transistor.
