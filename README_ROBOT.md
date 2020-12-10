@@ -30,6 +30,8 @@ edge connectors are too big
 
 on eric's notes I started going to a golbal enable, but I didn't remove the signals from the pi headder or renams (/)
 
+move enable to a channel that is by default in the right state 
+
 ## Erick's notse
 * Could use a common ENABLE for all motors, but might need a bigger transistor.
 * Gate resistance is pretty high at 1k, but, given the stepping speed, I'm sure it's fine. The internal pulldowns are around 60k, so it won't affect the gate voltage much.
