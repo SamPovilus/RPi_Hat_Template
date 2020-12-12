@@ -21,7 +21,7 @@ AR Path="/5515D39E" Ref="J1"  Part="1"
 AR Path="/5515D395/5515D39E" Ref="J1"  Part="1" 
 F 0 "J1" H 3500 2950 60  0000 C CNN
 F 1 "RPi_GPIO" H 3500 2850 60  0000 C CNN
-F 2 "RPi_Hat:Samtec_HLE-120-02-XXX-DV-BE-XX-XX" H 2750 2700 60  0001 C CNN
+F 2 "samtech_through_and_smt:Samtec_HLE-120-02-XXX-DV-BE-XX-XX" H 2750 2700 60  0001 C CNN
 F 3 "" H 2750 2700 60  0000 C CNN
 	1    2750 2700
 	1    0    0    -1  
@@ -236,35 +236,17 @@ Wire Wire Line
 	2350 3300 2550 3300
 Wire Wire Line
 	2350 3000 2550 3000
-Text GLabel 2350 3400 0    50   Input ~ 0
-MOTOR_EN
-Text GLabel 2350 4100 0    50   Input ~ 0
-MOTOR_3_DIRECTION
-Text GLabel 2350 4300 0    50   Input ~ 0
-MOTOR_3_STEP
-Text GLabel 2350 4200 0    50   Input ~ 0
-MOTOR_2_STEP
 Text GLabel 2350 3300 0    50   Input ~ 0
 MOTOR_2_DIRECTION
 Text GLabel 2350 3000 0    50   Input ~ 0
 MOTOR_1_DIRECTION
-Text GLabel 2350 4500 0    50   Input ~ 0
-SENSE_1_INT_1
-Text GLabel 2300 3600 0    50   Input ~ 0
-SPI_0_MOSI
-Text GLabel 2300 3800 0    50   Input ~ 0
-SPI_0_CLK
-Text GLabel 2300 3700 0    50   Input ~ 0
-SPI_0_MISO
 Text GLabel 2350 3200 0    50   Input ~ 0
 SPI_1_CE_1
-Text GLabel 2350 4400 0    50   Input ~ 0
-SPI_1_MISO
 $Comp
-L Connector:Conn_01x04_Male j1
+L Connector:Conn_01x04_Male J8
 U 1 1 5FBA10EB
 P 800 2700
-F 0 "j1" H 908 2981 50  0000 C CNN
+F 0 "J8" H 908 2981 50  0000 C CNN
 F 1 "I2C_1" H 908 2890 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left" H 800 2700 50  0001 C CNN
 F 3 "~" H 800 2700 50  0001 C CNN
@@ -272,9 +254,9 @@ F 3 "~" H 800 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 2900 1000 2900
+	2550 2900 2100 2900
 Wire Wire Line
-	1000 2800 2550 2800
+	1000 2800 1800 2800
 $Comp
 L power:GND #PWR0120
 U 1 1 5FBA378E
@@ -324,7 +306,7 @@ Wire Wire Line
 Wire Wire Line
 	1350 2650 1350 2550
 Wire Wire Line
-	1200 2300 1200 2600
+	1200 2300 1200 2400
 Wire Wire Line
 	1200 2600 1000 2600
 Wire Wire Line
@@ -345,4 +327,128 @@ $EndComp
 Connection ~ 4500 2700
 Wire Wire Line
 	4500 2700 4450 2700
+Text GLabel 2350 4400 0    50   Input ~ 0
+SPI_1_MISO
+Text GLabel 2300 3700 0    50   Input ~ 0
+SPI_0_MISO
+Text GLabel 2300 3800 0    50   Input ~ 0
+SPI_0_CLK
+Text GLabel 2300 3600 0    50   Input ~ 0
+SPI_0_MOSI
+Text GLabel 2350 4500 0    50   Input ~ 0
+SENSE_1_INT_1
+Text GLabel 2350 4200 0    50   Input ~ 0
+MOTOR_2_STEP
+Text GLabel 2350 4300 0    50   Input ~ 0
+MOTOR_3_STEP
+Text GLabel 2350 4100 0    50   Input ~ 0
+MOTOR_3_DIRECTION
+Text GLabel 2350 3400 0    50   Input ~ 0
+MOTOR_EN
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 5FD565C5
+P 1800 2550
+F 0 "JP?" V 1754 2598 50  0000 L CNN
+F 1 "Jumper_NO_Small" V 1845 2598 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 1800 2550 50  0001 C CNN
+F 3 "~" H 1800 2550 50  0001 C CNN
+	1    1800 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 5FD56EAF
+P 2100 2300
+F 0 "JP?" V 2054 2348 50  0000 L CNN
+F 1 "Jumper_NO_Small" V 2145 2348 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2100 2300 50  0001 C CNN
+F 3 "~" H 2100 2300 50  0001 C CNN
+	1    2100 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5FD60F22
+P 2100 1900
+AR Path="/5FB8D37C/5FD60F22" Ref="R?"  Part="1" 
+AR Path="/5515D395/5FD60F22" Ref="R?"  Part="1" 
+F 0 "R?" V 1895 1900 50  0000 C CNN
+F 1 "10k" V 1986 1900 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2100 1900 50  0001 C CNN
+F 3 "~" H 2100 1900 50  0001 C CNN
+	1    2100 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5FD62280
+P 1800 2100
+AR Path="/5FB8D37C/5FD62280" Ref="R?"  Part="1" 
+AR Path="/5515D395/5FD62280" Ref="R?"  Part="1" 
+F 0 "R?" V 1595 2100 50  0000 C CNN
+F 1 "10k" V 1686 2100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1800 2100 50  0001 C CNN
+F 3 "~" H 1800 2100 50  0001 C CNN
+	1    1800 2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1800 2200 1800 2450
+Wire Wire Line
+	1800 2650 1800 2800
+Connection ~ 1800 2800
+Wire Wire Line
+	1800 2800 2550 2800
+Wire Wire Line
+	2100 2400 2100 2900
+Connection ~ 2100 2900
+Wire Wire Line
+	2100 2900 1000 2900
+Wire Wire Line
+	2100 2200 2100 2000
+$Comp
+L power:VCCQ #PWR?
+U 1 1 5FD68BA0
+P 1000 2150
+F 0 "#PWR?" H 1000 2000 50  0001 C CNN
+F 1 "VCCQ" H 1015 2323 50  0000 C CNN
+F 2 "" H 1000 2150 50  0001 C CNN
+F 3 "" H 1000 2150 50  0001 C CNN
+	1    1000 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 2150 1000 2400
+Wire Wire Line
+	1000 2400 1200 2400
+Connection ~ 1200 2400
+Wire Wire Line
+	1200 2400 1200 2600
+$Comp
+L power:VCCQ #PWR?
+U 1 1 5FD6D47C
+P 1800 1750
+F 0 "#PWR?" H 1800 1600 50  0001 C CNN
+F 1 "VCCQ" H 1815 1923 50  0000 C CNN
+F 2 "" H 1800 1750 50  0001 C CNN
+F 3 "" H 1800 1750 50  0001 C CNN
+	1    1800 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1750 1800 2000
+$Comp
+L power:VCCQ #PWR?
+U 1 1 5FD6EBB7
+P 2100 1550
+F 0 "#PWR?" H 2100 1400 50  0001 C CNN
+F 1 "VCCQ" H 2115 1723 50  0000 C CNN
+F 2 "" H 2100 1550 50  0001 C CNN
+F 3 "" H 2100 1550 50  0001 C CNN
+	1    2100 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1550 2100 1800
 $EndSCHEMATC
