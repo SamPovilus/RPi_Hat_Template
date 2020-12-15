@@ -24,15 +24,15 @@ inductor on sensor power?
 
 test point labels
 
-side single row connectors to not offset
+side single row connectors to not offset (/)
 
-edge connectors are too big
+edge connectors are too big (/)
 
 on eric's notes I started going to a golbal enable, but I didn't remove the signals from the pi headder or renams (/)
 
 move enable to a channel that is by default in the right state 
 
-i2c pullup resistor footprints
+i2c pullup resistor footprints (/)
 
 ## Erick's notse
 * Could use a common ENABLE for all motors, but might need a bigger transistor.

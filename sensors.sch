@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 3 5
 Title ""
 Date ""
 Rev ""
@@ -179,14 +179,8 @@ Text HLabel 5450 1100 2    50   Input ~ 0
 SENSE_1_POWER
 Text HLabel 2300 1800 0    50   Input ~ 0
 SENSE_1_POWER
-Text GLabel 1700 7200 0    50   Input ~ 0
-SPI_0_CE_1
 Text GLabel 2450 4250 0    50   Input ~ 0
 SPI_0_CE_0
-Text GLabel 1700 7100 0    50   Input ~ 0
-SPI_0_CLK
-Text GLabel 1700 7000 0    50   Input ~ 0
-SPI_0_MOSI
 Text GLabel 5350 3750 2    50   Input ~ 0
 SENSE_1_INT_2
 Text GLabel 5350 3650 2    50   Input ~ 0
@@ -195,17 +189,6 @@ Wire Wire Line
 	4750 3650 4900 3650
 Wire Wire Line
 	5350 3750 4850 3750
-$Comp
-L Connector:TestPoint TP33
-U 1 1 5FD57E7D
-P 1800 7200
-F 0 "TP33" H 1858 7318 50  0000 L CNN
-F 1 "SENSE_1_CS_M1" H 1858 7227 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 2000 7200 50  0001 C CNN
-F 3 "~" H 2000 7200 50  0001 C CNN
-	1    1800 7200
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:TestPoint TP34
 U 1 1 5FD5856B
@@ -344,7 +327,7 @@ U 1 1 5FC7B661
 P 3950 1100
 F 0 "J2" H 4000 1317 50  0000 C CNN
 F 1 "SEN_POW_EN" H 4000 1226 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical_SMD" H 3950 1100 50  0001 C CNN
+F 2 "samtec:SAMTEC-TSM-102-01-X-DH" H 3950 1100 50  0001 C CNN
 F 3 "~" H 3950 1100 50  0001 C CNN
 	1    3950 1100
 	1    0    0    -1  
@@ -397,8 +380,6 @@ Wire Wire Line
 	4250 3350 4250 1800
 Wire Wire Line
 	3800 1800 4250 1800
-Text GLabel 1700 6600 0    50   Input ~ 0
-SPI_0_MISO
 $Comp
 L Connector:TestPoint TP25
 U 1 1 5FEB5568
@@ -561,7 +542,7 @@ U 1 1 5FF4F2C7
 P 9300 3600
 F 0 "J3" H 9350 3917 50  0000 C CNN
 F 1 "Conn_02x03_Odd_Even" H 9350 3826 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical_SMD" H 9300 3600 50  0001 C CNN
+F 2 "samtec:SAMTEC-TSM-103-01-X-DH" H 9300 3600 50  0001 C CNN
 F 3 "~" H 9300 3600 50  0001 C CNN
 	1    9300 3600
 	1    0    0    -1  
@@ -593,19 +574,7 @@ Wire Wire Line
 	2600 4250 2450 4250
 Connection ~ 2600 4250
 Wire Wire Line
-	1700 7100 2900 7100
-Wire Wire Line
-	1800 7200 2900 7200
-Wire Wire Line
-	1800 7200 1700 7200
-Connection ~ 1800 7200
-Wire Wire Line
-	1700 7000 2350 7000
-Wire Wire Line
 	2350 7000 2900 7000
-Connection ~ 2350 7000
-Wire Wire Line
-	1700 6600 2900 6600
 Wire Wire Line
 	1650 5900 2050 5900
 Wire Wire Line
@@ -729,4 +698,41 @@ Wire Wire Line
 Connection ~ 5100 1200
 Wire Wire Line
 	5100 1200 5450 1200
+$Sheet
+S 7850 6450 1150 1000
+U 5FD7B04C
+F0 "sparkfun_lsm6ds3" 50
+F1 "sparkfun_lsm6ds3.sch" 50
+$EndSheet
+Connection ~ 2350 7000
+Wire Wire Line
+	1700 6600 2900 6600
+Wire Wire Line
+	1700 7000 2350 7000
+Connection ~ 1800 7200
+Wire Wire Line
+	1800 7200 1700 7200
+Wire Wire Line
+	1800 7200 2900 7200
+Wire Wire Line
+	1700 7100 2900 7100
+Text GLabel 1700 6600 0    50   Input ~ 0
+SPI_0_MISO
+$Comp
+L Connector:TestPoint TP33
+U 1 1 5FD57E7D
+P 1800 7200
+F 0 "TP33" H 1858 7318 50  0000 L CNN
+F 1 "SENSE_1_CS_M1" H 1858 7227 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 2000 7200 50  0001 C CNN
+F 3 "~" H 2000 7200 50  0001 C CNN
+	1    1800 7200
+	1    0    0    -1  
+$EndComp
+Text GLabel 1700 7000 0    50   Input ~ 0
+SPI_0_MOSI
+Text GLabel 1700 7100 0    50   Input ~ 0
+SPI_0_CLK
+Text GLabel 1700 7200 0    50   Input ~ 0
+SPI_0_CE_1
 $EndSCHEMATC
