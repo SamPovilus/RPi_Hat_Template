@@ -60,8 +60,6 @@ Wire Wire Line
 Wire Wire Line
 	2700 1900 2700 1800
 Connection ~ 3800 1800
-Wire Wire Line
-	2700 1800 2850 1800
 Connection ~ 2700 1800
 Wire Wire Line
 	2300 1800 2700 1800
@@ -110,18 +108,6 @@ Wire Wire Line
 	3750 1100 3600 1100
 Wire Wire Line
 	2050 1100 2050 900 
-$Comp
-L Connector:TestPoint TP19
-U 1 1 5FC651BB
-P 2850 1800
-F 0 "TP19" H 2908 1918 50  0000 L CNN
-F 1 "SENSE_1_POWER" H 2908 1827 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 3050 1800 50  0001 C CNN
-F 3 "~" H 3050 1800 50  0001 C CNN
-	1    2850 1800
-	1    0    0    -1  
-$EndComp
-Connection ~ 2850 1800
 $Comp
 L Connector:TestPoint TP20
 U 1 1 5FC65857
@@ -173,8 +159,6 @@ Wire Wire Line
 	9100 3600 8400 3600
 Wire Wire Line
 	9100 3500 8400 3500
-Wire Wire Line
-	2850 1800 3800 1800
 Text HLabel 5450 1100 2    50   Input ~ 0
 SENSE_1_POWER
 Text HLabel 2300 1800 0    50   Input ~ 0
@@ -470,17 +454,6 @@ Wire Wire Line
 	2450 5900 2600 5900
 Wire Wire Line
 	1650 5900 1650 5150
-$Comp
-L Connector:TestPoint TP5
-U 1 1 5FF0909C
-P 2200 4750
-F 0 "TP5" H 2258 4868 50  0000 L CNN
-F 1 "SENSE_2_POWER" H 2258 4777 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 2400 4750 50  0001 C CNN
-F 3 "~" H 2400 4750 50  0001 C CNN
-	1    2200 4750
-	1    0    0    -1  
-$EndComp
 Text HLabel 1400 4700 0    50   Input ~ 0
 SENSE_2_POWER
 Wire Wire Line
@@ -587,8 +560,6 @@ Wire Wire Line
 Wire Wire Line
 	2400 4950 2400 4850
 Wire Wire Line
-	2400 4750 2200 4750
-Wire Wire Line
 	3600 4950 3600 5800
 Wire Wire Line
 	3500 6300 3500 5800
@@ -606,10 +577,7 @@ Connection ~ 2400 4850
 Wire Wire Line
 	2400 4850 2400 4750
 Wire Wire Line
-	2200 4750 1650 4750
-Wire Wire Line
 	1650 4750 1650 4700
-Connection ~ 2200 4750
 Wire Wire Line
 	1650 4750 1650 4850
 Connection ~ 1650 4750
@@ -735,4 +703,8 @@ Text GLabel 1700 7100 0    50   Input ~ 0
 SPI_0_CLK
 Text GLabel 1700 7200 0    50   Input ~ 0
 SPI_0_CE_1
+Wire Wire Line
+	1650 4750 2400 4750
+Wire Wire Line
+	2700 1800 3800 1800
 $EndSCHEMATC
