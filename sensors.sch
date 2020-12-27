@@ -66,7 +66,7 @@ Wire Wire Line
 Wire Wire Line
 	2300 1900 2300 1800
 $Comp
-L power:+3.3V #PWR0112
+L RPi_Hat-rescue:+3.3V-power #PWR0112
 U 1 1 5FBE9448
 P 2050 900
 F 0 "#PWR0112" H 2050 750 50  0001 C CNN
@@ -77,7 +77,7 @@ F 3 "" H 2050 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0114
+L RPi_Hat-rescue:GND-power #PWR0114
 U 1 1 5FBEA1A0
 P 3050 4350
 F 0 "#PWR0114" H 3050 4100 50  0001 C CNN
@@ -109,7 +109,7 @@ Wire Wire Line
 Wire Wire Line
 	2050 1100 2050 900 
 $Comp
-L Connector:TestPoint TP20
+L RPi_Hat-rescue:TestPoint-Connector TP20
 U 1 1 5FC65857
 P 2900 1100
 F 0 "TP20" H 2958 1218 50  0000 L CNN
@@ -121,7 +121,7 @@ F 3 "~" H 3100 1100 50  0001 C CNN
 $EndComp
 Connection ~ 2900 1100
 $Comp
-L Connector:TestPoint TP2
+L RPi_Hat-rescue:TestPoint-Connector TP2
 U 1 1 5FC66989
 P 2400 2950
 F 0 "TP2" H 2458 3068 50  0000 L CNN
@@ -135,7 +135,7 @@ Connection ~ 2400 2950
 Wire Wire Line
 	2400 2950 2300 2950
 $Comp
-L Connector:TestPoint TP6
+L RPi_Hat-rescue:TestPoint-Connector TP6
 U 1 1 5FC67A60
 P 3250 2950
 F 0 "TP6" H 3308 3068 50  0000 L CNN
@@ -159,10 +159,6 @@ Wire Wire Line
 	9100 3600 8400 3600
 Wire Wire Line
 	9100 3500 8400 3500
-Text HLabel 5450 1100 2    50   Input ~ 0
-SENSE_1_POWER
-Text HLabel 2300 1800 0    50   Input ~ 0
-SENSE_1_POWER
 Text GLabel 2450 4250 0    50   Input ~ 0
 SPI_0_CE_0
 Text GLabel 5350 3750 2    50   Input ~ 0
@@ -174,7 +170,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 3750 4850 3750
 $Comp
-L Connector:TestPoint TP34
+L RPi_Hat-rescue:TestPoint-Connector TP34
 U 1 1 5FD5856B
 P 2600 4250
 F 0 "TP34" H 2658 4368 50  0000 L CNN
@@ -185,7 +181,7 @@ F 3 "~" H 2800 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP35
+L RPi_Hat-rescue:TestPoint-Connector TP35
 U 1 1 5FD59173
 P 2350 7000
 F 0 "TP35" H 2408 7118 50  0000 L CNN
@@ -196,7 +192,7 @@ F 3 "~" H 2550 7000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP24
+L RPi_Hat-rescue:TestPoint-Connector TP24
 U 1 1 5FD5A5B7
 P 4900 3650
 F 0 "TP24" H 4958 3768 50  0000 L CNN
@@ -210,7 +206,7 @@ Connection ~ 4900 3650
 Wire Wire Line
 	4900 3650 5350 3650
 $Comp
-L Connector:TestPoint TP23
+L RPi_Hat-rescue:TestPoint-Connector TP23
 U 1 1 5FD5ADB8
 P 4850 3750
 F 0 "TP23" H 4908 3868 50  0000 L CNN
@@ -234,7 +230,7 @@ Wire Wire Line
 Wire Wire Line
 	4700 6700 4150 6700
 $Comp
-L Connector:TestPoint TP22
+L RPi_Hat-rescue:TestPoint-Connector TP22
 U 1 1 5FD66D1D
 P 4300 6600
 F 0 "TP22" H 4358 6718 50  0000 L CNN
@@ -248,7 +244,7 @@ Connection ~ 4300 6600
 Wire Wire Line
 	4300 6600 4700 6600
 $Comp
-L Connector:TestPoint TP21
+L RPi_Hat-rescue:TestPoint-Connector TP21
 U 1 1 5FD66D25
 P 4150 6700
 F 0 "TP21" H 4208 6818 50  0000 L CNN
@@ -266,7 +262,7 @@ Wire Wire Line
 Wire Wire Line
 	2700 2950 3050 2950
 $Comp
-L power:GND #PWR0117
+L RPi_Hat-rescue:GND-power #PWR0117
 U 1 1 5FD9E41A
 P 8900 3700
 F 0 "#PWR0117" H 8900 3450 50  0001 C CNN
@@ -279,7 +275,7 @@ $EndComp
 Wire Wire Line
 	9100 3700 8900 3700
 $Comp
-L Connector:TestPoint TP36
+L RPi_Hat-rescue:TestPoint-Connector TP36
 U 1 1 5FD58B5E
 P 2900 4150
 F 0 "TP36" H 2958 4268 50  0000 L CNN
@@ -290,7 +286,7 @@ F 3 "~" H 3100 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP18
+L RPi_Hat-rescue:TestPoint-Connector TP18
 U 1 1 5FC56E1A
 P 2350 1100
 F 0 "TP18" H 2408 1218 50  0000 L CNN
@@ -303,10 +299,8 @@ $EndComp
 Connection ~ 2350 1100
 Wire Wire Line
 	2350 1100 2900 1100
-Text HLabel 5450 1200 2    50   Input ~ 0
-SENSE_2_POWER
 $Comp
-L Connector_Generic:Conn_02x02_Odd_Even J2
+L RPi_Hat-rescue:Conn_02x02_Odd_Even-Connector_Generic J2
 U 1 1 5FC7B661
 P 3950 1100
 F 0 "J2" H 4000 1317 50  0000 C CNN
@@ -326,7 +320,7 @@ Wire Wire Line
 Wire Wire Line
 	4250 1200 5100 1200
 $Comp
-L Sensor_Motion:LSM6DS3 U1
+L RPi_Hat-rescue:LSM6DS3-Sensor_Motion U1
 U 1 1 5FE3E0B1
 P 4150 3950
 F 0 "U1" H 4794 3996 50  0000 L CNN
@@ -337,7 +331,7 @@ F 3 "www.st.com/resource/en/datasheet/lsm6ds3.pdf" H 4250 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0115
+L RPi_Hat-rescue:GND-power #PWR0115
 U 1 1 5FE68428
 P 3400 3850
 F 0 "#PWR0115" H 3400 3600 50  0001 C CNN
@@ -365,7 +359,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 1800 4250 1800
 $Comp
-L Connector:TestPoint TP25
+L RPi_Hat-rescue:TestPoint-Connector TP25
 U 1 1 5FEB5568
 P 2800 3650
 F 0 "TP25" H 2858 3768 50  0000 L CNN
@@ -376,7 +370,7 @@ F 3 "~" H 3000 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0119
+L RPi_Hat-rescue:GND-power #PWR0119
 U 1 1 5FEC1A14
 P 4150 4750
 F 0 "#PWR0119" H 4150 4500 50  0001 C CNN
@@ -429,7 +423,7 @@ F 3 "" H 2450 5150 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0141
+L RPi_Hat-rescue:GND-power #PWR0141
 U 1 1 5FF0908C
 P 2400 7300
 F 0 "#PWR0141" H 2400 7050 50  0001 C CNN
@@ -454,12 +448,10 @@ Wire Wire Line
 	2450 5900 2600 5900
 Wire Wire Line
 	1650 5900 1650 5150
-Text HLabel 1400 4700 0    50   Input ~ 0
-SENSE_2_POWER
 Wire Wire Line
 	2050 5900 2400 5900
 $Comp
-L Sensor_Motion:LSM6DS3 U2
+L RPi_Hat-rescue:LSM6DS3-Sensor_Motion U2
 U 1 1 5FF090B7
 P 3500 6900
 F 0 "U2" H 4144 6946 50  0000 L CNN
@@ -470,7 +462,7 @@ F 3 "www.st.com/resource/en/datasheet/lsm6ds3.pdf" H 3600 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0142
+L RPi_Hat-rescue:GND-power #PWR0142
 U 1 1 5FF090BD
 P 2750 6800
 F 0 "#PWR0142" H 2750 6550 50  0001 C CNN
@@ -490,7 +482,7 @@ Connection ~ 2850 6800
 Wire Wire Line
 	2850 6800 2900 6800
 $Comp
-L power:GND #PWR0143
+L RPi_Hat-rescue:GND-power #PWR0143
 U 1 1 5FF090D0
 P 3500 7700
 F 0 "#PWR0143" H 3500 7450 50  0001 C CNN
@@ -510,7 +502,7 @@ Wire Wire Line
 	3500 7700 3500 7600
 Connection ~ 3500 7600
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J3
+L RPi_Hat-rescue:Conn_02x03_Odd_Even-Connector_Generic J3
 U 1 1 5FF4F2C7
 P 9300 3600
 F 0 "J3" H 9350 3917 50  0000 C CNN
@@ -595,7 +587,7 @@ F 3 "~" H 7880 1750 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L RPi_Hat-rescue:R_Small_US-Device R?
 U 1 1 5FE88290
 P 7950 950
 AR Path="/5FB8D37C/5FE88290" Ref="R?"  Part="1" 
@@ -608,7 +600,7 @@ F 3 "~" H 7950 950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L RPi_Hat-rescue:R_Small_US-Device R?
 U 1 1 5FE88296
 P 7750 1250
 AR Path="/5FB8D37C/5FE88296" Ref="R?"  Part="1" 
@@ -627,7 +619,7 @@ Wire Wire Line
 Wire Wire Line
 	7750 1350 7750 1450
 $Comp
-L power:GND #PWR0130
+L RPi_Hat-rescue:GND-power #PWR0130
 U 1 1 5FE8BE41
 P 7850 2350
 F 0 "#PWR0130" H 7850 2100 50  0001 C CNN
@@ -664,8 +656,6 @@ Wire Wire Line
 Wire Wire Line
 	5100 1950 5100 1200
 Connection ~ 5100 1200
-Wire Wire Line
-	5100 1200 5450 1200
 $Sheet
 S 7850 6450 1150 1000
 U 5FD7B04C
@@ -687,7 +677,7 @@ Wire Wire Line
 Text GLabel 1700 6600 0    50   Input ~ 0
 SPI_0_MISO
 $Comp
-L Connector:TestPoint TP33
+L RPi_Hat-rescue:TestPoint-Connector TP33
 U 1 1 5FD57E7D
 P 1800 7200
 F 0 "TP33" H 1858 7318 50  0000 L CNN
@@ -707,4 +697,14 @@ Wire Wire Line
 	1650 4750 2400 4750
 Wire Wire Line
 	2700 1800 3800 1800
+Wire Wire Line
+	5100 1200 5450 1200
+Text GLabel 2300 1800 0    50   Input ~ 0
+SENSE_1_POWER
+Text GLabel 1400 4700 0    50   Input ~ 0
+SENSE_2_POWER
+Text GLabel 5450 1100 2    50   Input ~ 0
+SENSE_1_POWER
+Text GLabel 5450 1200 2    50   Input ~ 0
+SENSE_2_POWER
 $EndSCHEMATC

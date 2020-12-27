@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Transistor_BJT:MMBT3904 Q2
+L RPi_Hat-rescue:MMBT3904-Transistor_BJT Q2
 U 1 1 5FB8DDDD
 P 4600 3900
 F 0 "Q2" H 4791 3946 50  0000 L CNN
@@ -25,7 +25,7 @@ F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 4600 3900 50  0001 L 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:MMBT3904 Q3
+L RPi_Hat-rescue:MMBT3904-Transistor_BJT Q3
 U 1 1 5FB8E381
 P 5750 4100
 F 0 "Q3" H 5941 4146 50  0000 L CNN
@@ -36,7 +36,7 @@ F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 5750 4100 50  0001 L 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x06_Male J4
+L RPi_Hat-rescue:Conn_01x06_Male-Connector J4
 U 1 1 5FBB0A2F
 P 6650 3700
 F 0 "J4" H 6622 3582 50  0000 R CNN
@@ -63,7 +63,7 @@ Connection ~ 5550 3600
 Wire Wire Line
 	6450 3700 5300 3700
 $Comp
-L power:GND #PWR0124
+L RPi_Hat-rescue:GND-power #PWR0124
 U 1 1 5FBB5C08
 P 5850 4300
 F 0 "#PWR0124" H 5850 4050 50  0001 C CNN
@@ -74,7 +74,7 @@ F 3 "" H 5850 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0125
+L RPi_Hat-rescue:GND-power #PWR0125
 U 1 1 5FBB6241
 P 4700 4100
 F 0 "#PWR0125" H 4700 3850 50  0001 C CNN
@@ -85,7 +85,7 @@ F 3 "" H 4700 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R3
+L RPi_Hat-rescue:R_Small_US-Device R3
 U 1 1 5FBBA8C4
 P 5400 4100
 F 0 "R3" V 5195 4100 50  0000 C CNN
@@ -106,7 +106,7 @@ Wire Wire Line
 Wire Wire Line
 	5550 4100 5500 4100
 $Comp
-L Transistor_BJT:MMBT3904 Q5
+L RPi_Hat-rescue:MMBT3904-Transistor_BJT Q5
 U 1 1 5FBD2F17
 P 3400 7500
 F 0 "Q5" H 3591 7546 50  0000 L CNN
@@ -117,7 +117,7 @@ F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 3400 7500 50  0001 L 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:MMBT3904 Q6
+L RPi_Hat-rescue:MMBT3904-Transistor_BJT Q6
 U 1 1 5FBD2F1D
 P 4550 7700
 F 0 "Q6" H 4741 7746 50  0000 L CNN
@@ -128,7 +128,7 @@ F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 4550 7700 50  0001 L 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x06_Male J5
+L RPi_Hat-rescue:Conn_01x06_Male-Connector J5
 U 1 1 5FBD2F23
 P 5600 7300
 F 0 "J5" H 5572 7182 50  0000 R CNN
@@ -157,7 +157,7 @@ Wire Wire Line
 Wire Wire Line
 	5400 7500 5300 7500
 $Comp
-L power:GND #PWR0128
+L RPi_Hat-rescue:GND-power #PWR0128
 U 1 1 5FBD2F3A
 P 4650 7900
 F 0 "#PWR0128" H 4650 7650 50  0001 C CNN
@@ -168,7 +168,7 @@ F 3 "" H 4650 7900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0129
+L RPi_Hat-rescue:GND-power #PWR0129
 U 1 1 5FBD2F40
 P 3500 7700
 F 0 "#PWR0129" H 3500 7450 50  0001 C CNN
@@ -179,7 +179,7 @@ F 3 "" H 3500 7700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R6
+L RPi_Hat-rescue:R_Small_US-Device R6
 U 1 1 5FBD2F52
 P 4200 7700
 F 0 "R6" V 3995 7700 50  0000 C CNN
@@ -194,7 +194,7 @@ MOTOR_2_STEP
 Text GLabel 2950 7800 0    50   Input ~ 0
 MOTOR_2_DIRECTION
 $Comp
-L Device:R_Small_US R5
+L RPi_Hat-rescue:R_Small_US-Device R5
 U 1 1 5FBD2F5A
 P 3050 7500
 F 0 "R5" V 2845 7500 50  0000 C CNN
@@ -213,7 +213,7 @@ Wire Wire Line
 Wire Wire Line
 	4350 7700 4300 7700
 $Comp
-L Transistor_BJT:MMBT3904 Q10
+L RPi_Hat-rescue:MMBT3904-Transistor_BJT Q10
 U 1 1 5FBD5351
 P 8750 3550
 F 0 "Q10" H 8941 3596 50  0000 L CNN
@@ -224,7 +224,7 @@ F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 8750 3550 50  0001 L 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:MMBT3904 Q12
+L RPi_Hat-rescue:MMBT3904-Transistor_BJT Q12
 U 1 1 5FBD5357
 P 10100 3750
 F 0 "Q12" H 10291 3796 50  0000 L CNN
@@ -235,7 +235,7 @@ F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 10100 3750 50  0001 L
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x06_Male J7
+L RPi_Hat-rescue:Conn_01x06_Male-Connector J7
 U 1 1 5FBD535D
 P 11350 3350
 F 0 "J7" H 11322 3232 50  0000 R CNN
@@ -260,7 +260,7 @@ Wire Wire Line
 	10750 3450 10750 3250
 Connection ~ 10750 3250
 $Comp
-L power:GND #PWR0132
+L RPi_Hat-rescue:GND-power #PWR0132
 U 1 1 5FBD5374
 P 10200 3950
 F 0 "#PWR0132" H 10200 3700 50  0001 C CNN
@@ -271,7 +271,7 @@ F 3 "" H 10200 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0133
+L RPi_Hat-rescue:GND-power #PWR0133
 U 1 1 5FBD537A
 P 8850 3750
 F 0 "#PWR0133" H 8850 3500 50  0001 C CNN
@@ -282,7 +282,7 @@ F 3 "" H 8850 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R12
+L RPi_Hat-rescue:R_Small_US-Device R12
 U 1 1 5FBD538C
 P 9750 3750
 F 0 "R12" V 9545 3750 50  0000 C CNN
@@ -297,7 +297,7 @@ MOTOR_3_STEP
 Text GLabel 8300 3850 0    50   Input ~ 0
 MOTOR_3_DIRECTION
 $Comp
-L Device:R_Small_US R10
+L RPi_Hat-rescue:R_Small_US-Device R10
 U 1 1 5FBD5394
 P 8400 3550
 F 0 "R10" V 8195 3550 50  0000 C CNN
@@ -316,7 +316,7 @@ Wire Wire Line
 Wire Wire Line
 	9900 3750 9850 3750
 $Comp
-L Transistor_BJT:MMBT3904 Q9
+L RPi_Hat-rescue:MMBT3904-Transistor_BJT Q9
 U 1 1 5FBD76D1
 P 8100 7250
 F 0 "Q9" H 8291 7296 50  0000 L CNN
@@ -327,7 +327,7 @@ F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 8100 7250 50  0001 L 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:MMBT3904 Q11
+L RPi_Hat-rescue:MMBT3904-Transistor_BJT Q11
 U 1 1 5FBD76D7
 P 9250 7450
 F 0 "Q11" H 9441 7496 50  0000 L CNN
@@ -338,7 +338,7 @@ F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 9250 7450 50  0001 L 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x06_Male J6
+L RPi_Hat-rescue:Conn_01x06_Male-Connector J6
 U 1 1 5FBD76DD
 P 10850 7050
 F 0 "J6" H 10822 6932 50  0000 R CNN
@@ -367,7 +367,7 @@ Wire Wire Line
 Wire Wire Line
 	10650 7250 10400 7250
 $Comp
-L power:GND #PWR0136
+L RPi_Hat-rescue:GND-power #PWR0136
 U 1 1 5FBD76F4
 P 9350 7650
 F 0 "#PWR0136" H 9350 7400 50  0001 C CNN
@@ -378,7 +378,7 @@ F 3 "" H 9350 7650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0137
+L RPi_Hat-rescue:GND-power #PWR0137
 U 1 1 5FBD76FA
 P 8200 7450
 F 0 "#PWR0137" H 8200 7200 50  0001 C CNN
@@ -389,7 +389,7 @@ F 3 "" H 8200 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R11
+L RPi_Hat-rescue:R_Small_US-Device R11
 U 1 1 5FBD770C
 P 8900 7450
 F 0 "R11" V 8695 7450 50  0000 C CNN
@@ -404,7 +404,7 @@ MOTOR_4_STEP
 Text GLabel 7650 7550 0    50   Input ~ 0
 MOTOR_4_DIRECTION
 $Comp
-L Device:R_Small_US R9
+L RPi_Hat-rescue:R_Small_US-Device R9
 U 1 1 5FBD7714
 P 7750 7250
 F 0 "R9" V 7545 7250 50  0000 C CNN
@@ -423,7 +423,7 @@ Wire Wire Line
 Wire Wire Line
 	9050 7450 9000 7450
 $Comp
-L Connector:TestPoint TP8
+L RPi_Hat-rescue:TestPoint-Connector TP8
 U 1 1 5FBE7561
 P 5000 3700
 F 0 "TP8" H 5058 3818 50  0000 L CNN
@@ -437,7 +437,7 @@ Connection ~ 5000 3700
 Wire Wire Line
 	5000 3700 4700 3700
 $Comp
-L Connector:TestPoint TP10
+L RPi_Hat-rescue:TestPoint-Connector TP10
 U 1 1 5FBE90F8
 P 5500 4100
 F 0 "TP10" H 5558 4218 50  0000 L CNN
@@ -449,7 +449,7 @@ F 3 "~" H 5700 4100 50  0001 C CNN
 $EndComp
 Connection ~ 5500 4100
 $Comp
-L Connector:TestPoint TP7
+L RPi_Hat-rescue:TestPoint-Connector TP7
 U 1 1 5FBEBBEF
 P 3650 7300
 F 0 "TP7" H 3708 7418 50  0000 L CNN
@@ -463,7 +463,7 @@ Connection ~ 3650 7300
 Wire Wire Line
 	3650 7300 3500 7300
 $Comp
-L Connector:TestPoint TP9
+L RPi_Hat-rescue:TestPoint-Connector TP9
 U 1 1 5FBEC9FE
 P 4300 7700
 F 0 "TP9" H 4358 7818 50  0000 L CNN
@@ -475,7 +475,7 @@ F 3 "~" H 4500 7700 50  0001 C CNN
 $EndComp
 Connection ~ 4300 7700
 $Comp
-L Connector:TestPoint TP14
+L RPi_Hat-rescue:TestPoint-Connector TP14
 U 1 1 5FBF18C5
 P 9200 3350
 F 0 "TP14" H 9258 3468 50  0000 L CNN
@@ -489,7 +489,7 @@ Connection ~ 9200 3350
 Wire Wire Line
 	9200 3350 8850 3350
 $Comp
-L Connector:TestPoint TP16
+L RPi_Hat-rescue:TestPoint-Connector TP16
 U 1 1 5FBF220A
 P 9850 3750
 F 0 "TP16" H 9908 3868 50  0000 L CNN
@@ -501,7 +501,7 @@ F 3 "~" H 10050 3750 50  0001 C CNN
 $EndComp
 Connection ~ 9850 3750
 $Comp
-L Connector:TestPoint TP13
+L RPi_Hat-rescue:TestPoint-Connector TP13
 U 1 1 5FBF4577
 P 8250 7050
 F 0 "TP13" H 8308 7168 50  0000 L CNN
@@ -515,7 +515,7 @@ Connection ~ 8250 7050
 Wire Wire Line
 	8250 7050 8200 7050
 $Comp
-L Connector:TestPoint TP15
+L RPi_Hat-rescue:TestPoint-Connector TP15
 U 1 1 5FBF5074
 P 9000 7450
 F 0 "TP15" H 9058 7568 50  0000 L CNN
@@ -527,7 +527,7 @@ F 3 "~" H 9200 7450 50  0001 C CNN
 $EndComp
 Connection ~ 9000 7450
 $Comp
-L Jumper:Jumper_3_Open JP1
+L RPi_Hat-rescue:Jumper_3_Open-Jumper JP1
 U 1 1 5FE0BEEA
 P 2050 1150
 F 0 "JP1" V 2004 1237 50  0000 L CNN
@@ -538,7 +538,7 @@ F 3 "~" H 2050 1150 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR0113
+L RPi_Hat-rescue:+5V-power #PWR0113
 U 1 1 5FE0D08F
 P 1650 700
 F 0 "#PWR0113" H 1650 550 50  0001 C CNN
@@ -549,7 +549,7 @@ F 3 "" H 1650 700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VD #PWR0116
+L RPi_Hat-rescue:VD-power #PWR0116
 U 1 1 5FE0DF8C
 P 1050 1100
 F 0 "#PWR0116" H 1050 950 50  0001 C CNN
@@ -560,7 +560,7 @@ F 3 "" H 1050 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VS #PWR0118
+L RPi_Hat-rescue:VS-power #PWR0118
 U 1 1 5FE0F1F9
 P 2750 1500
 F 0 "#PWR0118" H 2550 1350 50  0001 C CNN
@@ -571,7 +571,7 @@ F 3 "" H 2750 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VS #PWR0123
+L RPi_Hat-rescue:VS-power #PWR0123
 U 1 1 5FE10182
 P 3500 900
 F 0 "#PWR0123" H 3300 750 50  0001 C CNN
@@ -582,7 +582,7 @@ F 3 "" H 3500 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0127
+L RPi_Hat-rescue:GND-power #PWR0127
 U 1 1 5FE110C0
 P 3500 1200
 F 0 "#PWR0127" H 3500 950 50  0001 C CNN
@@ -593,7 +593,7 @@ F 3 "" H 3500 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J9
+L RPi_Hat-rescue:Conn_01x02-Connector_Generic J9
 U 1 1 5FE12519
 P 3900 1150
 F 0 "J9" H 3980 1142 50  0000 L CNN
@@ -626,7 +626,7 @@ Wire Wire Line
 Wire Wire Line
 	2050 700  2050 900 
 $Comp
-L power:VD #PWR0131
+L RPi_Hat-rescue:VD-power #PWR0131
 U 1 1 5FE22654
 P 5550 3150
 F 0 "#PWR0131" H 5550 3000 50  0001 C CNN
@@ -637,7 +637,7 @@ F 3 "" H 5550 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VD #PWR0135
+L RPi_Hat-rescue:VD-power #PWR0135
 U 1 1 5FE23562
 P 10750 2800
 F 0 "#PWR0135" H 10750 2650 50  0001 C CNN
@@ -648,7 +648,7 @@ F 3 "" H 10750 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VD #PWR0139
+L RPi_Hat-rescue:VD-power #PWR0139
 U 1 1 5FE24498
 P 9050 6500
 F 0 "#PWR0139" H 9050 6350 50  0001 C CNN
@@ -659,7 +659,7 @@ F 3 "" H 9050 6500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VD #PWR0140
+L RPi_Hat-rescue:VD-power #PWR0140
 U 1 1 5FE253F6
 P 4350 6750
 F 0 "#PWR0140" H 4350 6600 50  0001 C CNN
@@ -701,7 +701,7 @@ Connection ~ 9950 3350
 Wire Wire Line
 	9950 3350 11150 3350
 $Comp
-L Device:R_Small_US R19
+L RPi_Hat-rescue:R_Small_US-Device R19
 U 1 1 5FD59C0A
 P 9300 1650
 F 0 "R19" V 9095 1650 50  0000 C CNN
@@ -712,7 +712,7 @@ F 3 "~" H 9300 1650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R17
+L RPi_Hat-rescue:R_Small_US-Device R17
 U 1 1 5FD5EC1C
 P 9100 1950
 F 0 "R17" V 8895 1950 50  0000 C CNN
@@ -723,7 +723,7 @@ F 3 "~" H 9100 1950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:VD #PWR0134
+L RPi_Hat-rescue:VD-power #PWR0134
 U 1 1 5FD5F5EC
 P 9150 1350
 F 0 "#PWR0134" H 9150 1200 50  0001 C CNN
@@ -764,7 +764,7 @@ Wire Wire Line
 Wire Wire Line
 	3350 6350 3350 6800
 $Comp
-L Device:R_Small_US R14
+L RPi_Hat-rescue:R_Small_US-Device R14
 U 1 1 5FD99892
 P 2700 5100
 F 0 "R14" V 2495 5100 50  0000 C CNN
@@ -775,7 +775,7 @@ F 3 "~" H 2700 5100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R13
+L RPi_Hat-rescue:R_Small_US-Device R13
 U 1 1 5FD99898
 P 2500 5400
 F 0 "R13" V 2295 5400 50  0000 C CNN
@@ -786,7 +786,7 @@ F 3 "~" H 2500 5400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:VD #PWR0138
+L RPi_Hat-rescue:VD-power #PWR0138
 U 1 1 5FD9989E
 P 2550 4800
 F 0 "#PWR0138" H 2550 4650 50  0001 C CNN
@@ -827,7 +827,7 @@ Wire Wire Line
 Wire Wire Line
 	9200 6300 10050 6300
 $Comp
-L Device:R_Small_US R20
+L RPi_Hat-rescue:R_Small_US-Device R20
 U 1 1 5FD9DDCE
 P 9400 5050
 F 0 "R20" V 9195 5050 50  0000 C CNN
@@ -838,7 +838,7 @@ F 3 "~" H 9400 5050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R18
+L RPi_Hat-rescue:R_Small_US-Device R18
 U 1 1 5FD9DDD4
 P 9200 5350
 F 0 "R18" V 8995 5350 50  0000 C CNN
@@ -849,7 +849,7 @@ F 3 "~" H 9200 5350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:VD #PWR0144
+L RPi_Hat-rescue:VD-power #PWR0144
 U 1 1 5FD9DDDA
 P 9250 4750
 F 0 "#PWR0144" H 9250 4600 50  0001 C CNN
@@ -890,7 +890,7 @@ Wire Wire Line
 Wire Wire Line
 	4450 2950 5300 2950
 $Comp
-L Device:R_Small_US R16
+L RPi_Hat-rescue:R_Small_US-Device R16
 U 1 1 5FDA2978
 P 4650 1700
 F 0 "R16" V 4445 1700 50  0000 C CNN
@@ -901,7 +901,7 @@ F 3 "~" H 4650 1700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R15
+L RPi_Hat-rescue:R_Small_US-Device R15
 U 1 1 5FDA297E
 P 4450 2000
 F 0 "R15" V 4245 2000 50  0000 C CNN
@@ -912,7 +912,7 @@ F 3 "~" H 4450 2000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:VD #PWR0145
+L RPi_Hat-rescue:VD-power #PWR0145
 U 1 1 5FDA2984
 P 4500 1400
 F 0 "#PWR0145" H 4500 1250 50  0001 C CNN
@@ -938,7 +938,7 @@ Wire Wire Line
 Wire Wire Line
 	1950 3400 1450 3400
 $Comp
-L Connector:TestPoint TP4
+L RPi_Hat-rescue:TestPoint-Connector TP4
 U 1 1 5FBE5C8F
 P 1950 3400
 F 0 "TP4" H 2008 3518 50  0000 L CNN
@@ -957,7 +957,7 @@ Wire Wire Line
 Wire Wire Line
 	4150 3900 4150 4200
 $Comp
-L Device:R_Small_US R2
+L RPi_Hat-rescue:R_Small_US-Device R2
 U 1 1 5FBBF0E2
 P 4250 3900
 F 0 "R2" V 4045 3900 50  0000 C CNN
@@ -968,7 +968,7 @@ F 3 "~" H 4250 3900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R1
+L RPi_Hat-rescue:R_Small_US-Device R1
 U 1 1 5FBB9084
 P 1000 3600
 F 0 "R1" V 795 3600 50  0000 C CNN
@@ -979,7 +979,7 @@ F 3 "~" H 1000 3600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0126
+L RPi_Hat-rescue:GND-power #PWR0126
 U 1 1 5FBB66E4
 P 1450 3800
 F 0 "#PWR0126" H 1450 3550 50  0001 C CNN
@@ -990,7 +990,7 @@ F 3 "" H 1450 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:MMBT3904 Q1
+L RPi_Hat-rescue:MMBT3904-Transistor_BJT Q1
 U 1 1 5FB8DA24
 P 1350 3600
 F 0 "Q1" H 1541 3646 50  0000 L CNN
@@ -1018,7 +1018,7 @@ MOTOR_EN_OUT
 Wire Wire Line
 	7900 6850 10650 6850
 $Comp
-L Device:LED D2
+L RPi_Hat-rescue:LED-Device D2
 U 1 1 5FDFE755
 P 2250 2800
 F 0 "D2" V 2289 2682 50  0000 R CNN
@@ -1029,7 +1029,7 @@ F 3 "~" H 2250 2800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small_US R8
+L RPi_Hat-rescue:R_Small_US-Device R8
 U 1 1 5FDFF31E
 P 2250 2400
 F 0 "R8" V 2045 2400 50  0000 C CNN
@@ -1040,7 +1040,7 @@ F 3 "~" H 2250 2400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:VD #PWR0146
+L RPi_Hat-rescue:VD-power #PWR0146
 U 1 1 5FDFFB8D
 P 2250 2150
 F 0 "#PWR0146" H 2250 2000 50  0001 C CNN

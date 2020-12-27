@@ -61,7 +61,7 @@ Wire Wire Line
 Wire Wire Line
 	4450 4600 4650 4600
 $Comp
-L power:GND #PWR0101
+L RPi_Hat-rescue:GND-power #PWR0101
 U 1 1 5FB518D6
 P 2400 4600
 F 0 "#PWR0101" H 2400 4350 50  0001 C CNN
@@ -72,7 +72,7 @@ F 3 "" H 2400 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0102
+L RPi_Hat-rescue:GND-power #PWR0102
 U 1 1 5FB52176
 P 2400 3900
 F 0 "#PWR0102" H 2400 3650 50  0001 C CNN
@@ -83,7 +83,7 @@ F 3 "" H 2400 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0103
+L RPi_Hat-rescue:GND-power #PWR0103
 U 1 1 5FB5236C
 P 2400 3100
 F 0 "#PWR0103" H 2400 2850 50  0001 C CNN
@@ -94,7 +94,7 @@ F 3 "" H 2400 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0104
+L RPi_Hat-rescue:GND-power #PWR0104
 U 1 1 5FB5262E
 P 4600 2900
 F 0 "#PWR0104" H 4600 2650 50  0001 C CNN
@@ -105,7 +105,7 @@ F 3 "" H 4600 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0105
+L RPi_Hat-rescue:GND-power #PWR0105
 U 1 1 5FB52814
 P 4600 3300
 F 0 "#PWR0105" H 4600 3050 50  0001 C CNN
@@ -116,7 +116,7 @@ F 3 "" H 4600 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0106
+L RPi_Hat-rescue:GND-power #PWR0106
 U 1 1 5FB52A16
 P 4600 3600
 F 0 "#PWR0106" H 4600 3350 50  0001 C CNN
@@ -127,7 +127,7 @@ F 3 "" H 4600 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0107
+L RPi_Hat-rescue:GND-power #PWR0107
 U 1 1 5FB52C34
 P 4600 4100
 F 0 "#PWR0107" H 4600 3850 50  0001 C CNN
@@ -138,7 +138,7 @@ F 3 "" H 4600 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0108
+L RPi_Hat-rescue:GND-power #PWR0108
 U 1 1 5FB52E6E
 P 4600 4300
 F 0 "#PWR0108" H 4600 4050 50  0001 C CNN
@@ -165,7 +165,7 @@ Wire Wire Line
 Wire Wire Line
 	2400 3100 2550 3100
 $Comp
-L power:+3.3V #PWR0109
+L RPi_Hat-rescue:+3.3V-power #PWR0109
 U 1 1 5FB56AA0
 P 2400 2700
 F 0 "#PWR0109" H 2400 2550 50  0001 C CNN
@@ -176,7 +176,7 @@ F 3 "" H 2400 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0110
+L RPi_Hat-rescue:+5V-power #PWR0110
 U 1 1 5FB573E3
 P 4600 2700
 F 0 "#PWR0110" H 4600 2550 50  0001 C CNN
@@ -196,7 +196,7 @@ Connection ~ 4600 2700
 Wire Wire Line
 	2400 2700 2550 2700
 $Comp
-L power:+3.3V #PWR0111
+L RPi_Hat-rescue:+3.3V-power #PWR0111
 U 1 1 5FB596F4
 P 2400 3500
 F 0 "#PWR0111" H 2400 3350 50  0001 C CNN
@@ -243,7 +243,7 @@ MOTOR_1_DIRECTION
 Text GLabel 2350 3200 0    50   Input ~ 0
 SPI_1_CE_1
 $Comp
-L Connector:Conn_01x04_Male J8
+L RPi_Hat-rescue:Conn_01x04_Male-Connector J8
 U 1 1 5FBA10EB
 P 800 2700
 F 0 "J8" H 908 2981 50  0000 C CNN
@@ -258,7 +258,7 @@ Wire Wire Line
 Wire Wire Line
 	1000 2800 1800 2800
 $Comp
-L power:GND #PWR0120
+L RPi_Hat-rescue:GND-power #PWR0120
 U 1 1 5FBA378E
 P 1100 2700
 F 0 "#PWR0120" H 1100 2450 50  0001 C CNN
@@ -269,7 +269,7 @@ F 3 "" H 1100 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0121
+L RPi_Hat-rescue:+3.3V-power #PWR0121
 U 1 1 5FBA3D93
 P 1600 2050
 F 0 "#PWR0121" H 1600 1900 50  0001 C CNN
@@ -280,7 +280,7 @@ F 3 "" H 1600 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0122
+L RPi_Hat-rescue:+5V-power #PWR0122
 U 1 1 5FBA43AF
 P 1600 2650
 F 0 "#PWR0122" H 1600 2500 50  0001 C CNN
@@ -291,7 +291,7 @@ F 3 "" H 1600 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:Jumper_3_Open I2C_HDR_V_SEL1
+L RPi_Hat-rescue:Jumper_3_Open-Jumper I2C_HDR_V_SEL1
 U 1 1 5FBA4B22
 P 1350 2300
 F 0 "I2C_HDR_V_SEL1" V 1304 2386 50  0000 L CNN
@@ -314,7 +314,7 @@ Wire Wire Line
 Wire Wire Line
 	1000 2700 1100 2700
 $Comp
-L Connector:TestPoint TP37
+L RPi_Hat-rescue:TestPoint-Connector TP37
 U 1 1 5FDDDB06
 P 4500 2700
 F 0 "TP37" H 4558 2818 50  0000 L CNN
@@ -346,7 +346,7 @@ MOTOR_3_DIRECTION
 Text GLabel 2350 3400 0    50   Input ~ 0
 MOTOR_EN
 $Comp
-L Device:Jumper_NO_Small JP2
+L RPi_Hat-rescue:Jumper_NO_Small-Device JP2
 U 1 1 5FD565C5
 P 1800 2550
 F 0 "JP2" V 1754 2598 50  0000 L CNN
@@ -357,7 +357,7 @@ F 3 "~" H 1800 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Jumper_NO_Small JP3
+L RPi_Hat-rescue:Jumper_NO_Small-Device JP3
 U 1 1 5FD56EAF
 P 2100 2300
 F 0 "JP3" V 2054 2348 50  0000 L CNN
@@ -368,7 +368,7 @@ F 3 "~" H 2100 2300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L RPi_Hat-rescue:R_Small_US-Device R?
 U 1 1 5FD60F22
 P 2100 1900
 AR Path="/5FB8D37C/5FD60F22" Ref="R?"  Part="1" 
@@ -381,7 +381,7 @@ F 3 "~" H 2100 1900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L RPi_Hat-rescue:R_Small_US-Device R?
 U 1 1 5FD62280
 P 1800 2100
 AR Path="/5FB8D37C/5FD62280" Ref="R?"  Part="1" 
@@ -408,7 +408,7 @@ Wire Wire Line
 Wire Wire Line
 	2100 2200 2100 2000
 $Comp
-L power:VCCQ #PWR0147
+L RPi_Hat-rescue:VCCQ-power #PWR0147
 U 1 1 5FD68BA0
 P 1000 2150
 F 0 "#PWR0147" H 1000 2000 50  0001 C CNN
@@ -426,7 +426,7 @@ Connection ~ 1200 2400
 Wire Wire Line
 	1200 2400 1200 2600
 $Comp
-L power:VCCQ #PWR0148
+L RPi_Hat-rescue:VCCQ-power #PWR0148
 U 1 1 5FD6D47C
 P 1800 1750
 F 0 "#PWR0148" H 1800 1600 50  0001 C CNN
@@ -439,7 +439,7 @@ $EndComp
 Wire Wire Line
 	1800 1750 1800 2000
 $Comp
-L power:VCCQ #PWR0149
+L RPi_Hat-rescue:VCCQ-power #PWR0149
 U 1 1 5FD6EBB7
 P 2100 1550
 F 0 "#PWR0149" H 2100 1400 50  0001 C CNN
