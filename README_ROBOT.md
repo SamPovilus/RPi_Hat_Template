@@ -48,3 +48,4 @@ i2c pullup resistor footprints (/)
 * move enable to a channel that is by default in the right state
 * label test points
 * resistor calculation for 3904, used 1k which is more approprate for 2n2222
+* use qwiic connector instead of 100 mill? 
