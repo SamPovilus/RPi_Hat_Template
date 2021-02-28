@@ -52,3 +52,4 @@ i2c pullup resistor footprints (/)
 * add an i2c io expander with leds and a button or two
   * button to set accelerometer "zero"
   * led's to indicate accelerometer "zero"
+* add an x,y,z reference in the silk screen
